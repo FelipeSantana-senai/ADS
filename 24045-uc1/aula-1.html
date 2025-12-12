@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html id="master" lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="Layout/Template/img/favicon.ico" />
+    <title>Senai</title>
+    <!-- Lista de videos -->
+    <script src="videos.js"></script>
+    <!-- Config -->
+    <script src="Layout/Template/js/main.js" defer></script>
+    <link rel="stylesheet" href="Layout/Template/css/theme.css">
+    <link rel="stylesheet" href="Layout/Template/css/style.css">
+    <link rel="stylesheet" href="Layout/Aula/css/add-style.css">
+    <!-- Lottie -->
+    <script src="Layout/Template/bibliotecas/lottie/lottie.js"></script>
+    <script src="Layout/Template/bibliotecas/lottie/lottie-interactivity.min.js"></script>
+    <!-- JQuery-->
+    <script type="text/javascript" src="Layout/Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="Layout/Template/bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="Layout/Template/bibliotecas/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- UiKit-->
+    <link href="Layout/Template/bibliotecas/uikit/css/uikit.min.css" rel="stylesheet" />
+    <script src="Layout/Template/bibliotecas/uikit/js/uikit.min.js" async></script>
+    <script src="Layout/Template/bibliotecas/uikit/js/uikit-icons.min.js" async></script>
+    <!-- BoxIcons -->
+    <link href="Layout/Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+    <script src="Layout/Template/bibliotecas/boxicons/boxicons.js" defer></script>
+    <!-- H5p-player -->
+    <script type="text/javascript" src="Layout/Template/bibliotecas/h5p-player/dist/main.bundle.js"></script>
+    <!-- GOOGLE TRANSLATE -->
+    <script src="Layout/Template/js/google.js" type="text/javascript" defer></script>
+    <!-- SCORM -->
+    <script src="Layout/Template/scorm/APIWrapper.js" defer></script>
+    <script src="Layout/Template/scorm/SCOFunctions.js" defer></script>
+    <!-- BoxIcons -->
+    <script src="Layout/Template/bibliotecas/boxicons/boxicons.js"></script>
+    <link href="Layout/Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+    <!-- Prism  -->
+    <script src="Layout/Template/bibliotecas/prism/js/prism.js"></script>
+    <link href="Layout/Template/bibliotecas/prism/css/prism.css" rel='stylesheet'>
+    <!-- VIDEO DO YOUTUBE -->
+    <link href="Layout/Template/bibliotecas/youtube/css/youtube-chapters.min.css" rel="stylesheet" />
+    <!-- Grafico -->
+    <script src="Layout/Template/bibliotecas/charts/chart.js"></script>
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="Layout/Template/bibliotecas/fancybox/fancybox.css">
+    <!-- webtour -->
+    <link rel="stylesheet" href="Layout/Template/bibliotecas/webtour/introjs.min.css">
+</head>
+
+<body class="font">
+    <header>
+        <div id="google_translate_element"></div>
+        <!-- Vlibras -->
+        <div vw class="enabled">
+            <div id="vlibras-show" vw-access-button class="#"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <!-- Menu -->
+        <nav class="navbar-dark bg-menu-color fixed-top nav-height">
+            <div class="d-flex bd-highlight align-items-center g-2 nav-height">
+                <div class="bd-highlight">
+                    <button class="btn  align-items-center ms-2" data-bs-toggle="offcanvas"
+                        data-bs-target="#nav-menu-open-close" aria-controls="nav-menu-open-close"> <i
+                            class='cor1 bx  bx-menu bx-tada-hover'></i> </button>
+                </div>
+                <div class="bd-highlight mx-auto">
+                    <img src="Layout/Template/img/logo.png" class="d-none d-lg-block img-fluid" alt="SENAI"
+                        style="margin-left:150px; max-width:160px">
+                    <img src="Layout/Template/img/logo.png" class="d-md-block d-lg-none" alt="SENAI"
+                        style="margin-top: 5px;max-width: 120px;">
+                </div>
+                <div class="bd-highlight">
+                    <div class="d-flex bd-highlight align-items-center nav-height">
+                        <div class="form-check form-check-inline switch-group">
+                            <input class="form-check-input d-none" type="checkbox" name="themeBtns" id="themeSwitcher"
+                                aria-label="botão de mudança de tema" title="botão de mudança de tema">
+                            <label class="form-check-label" for="themeSwitcher">
+                                <div class="switch-darkmode">
+                                    <div class="icons">
+                                        <i class='bx bx-moon bx-tada-hover' title="tema escuro"></i>
+                                        <i class='bx bx-sun bx-spin-hover' title="tema claro"></i>
+                                    </div>
+                                    <div class="circle"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class=" d-flex flex-row align-middle ">
+                            <button class="btn" type="button" title="visualizar vlibras"
+                                onclick="toggleVLibrasAndVideos()">
+                                <i class='vlibras-show bx bx-universal-access  display-6' style="margin-bottom: 0px;"
+                                    aria-label="visualizar vlibras"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown me-2">
+                            <button class="btn text-white me-2" type="button" id="Acessibilidade"
+                                data-bs-toggle="dropdown" aria-expanded="falso" aria-label="Configuração"
+                                title="Configuração">
+                                <i class='bx bx-cog bx-spin-hover bx-sm'></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark menu-margin" aria-labelledby="Acessibilidade">
+                                <li class="dropdown-item">
+                                    <strong>Acessibilidade</strong>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item">
+                                        <div class="mb-3 form-check form-switch">
+                                            <input class="form-check-input " type="checkbox" name="themeBtns"
+                                                id="graySwitcher">
+                                            <label class="form-check-label menu" for="graySwitcher"
+                                                aria-label="visualização monocromático"
+                                                title="visualização monocromático">Modo
+                                                Monocromatico</label>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item">
+                                        <div class="mb-3 form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" name="themeBtns"
+                                                id="daltonicSwitcher">
+                                            <label class="form-check-label menu" for="daltonicSwitcher"
+                                                aria-label="visualização daltônico" title="visualização daltônico">Modo
+                                                Daltônico</label>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-item">
+                                    <span class="menu">Tamanho da Fonte</span>
+                                    <br>
+                                    <input type="range" class="form-range" min="50" max="115" step="5" id="size"
+                                        aria-label="seletor de tamanho da fonte" title="seletor de tamanho da fonte">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="true" data-bs-backdrop="static" tabindex="-1"
+                id="nav-menu-open-close" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header bg-menu-color">
+                    <p class="offcanvas-title" id="staticBackdropLabel">Menu</p> <button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <!-- Menu -->
+                    <nav id="navbar-menu" class="flex-column align-items-stretch pe-4 my-5">
+                        <nav class="nav nav-pills flex-column" id="menu-container"></nav>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main data-bs-spy="scroll" data-bs-offset="0">
+        <!-- Capa -->
+        <section>
+            <article
+                class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+                style="background-image: url('Layout/Template/img/capa.jpeg');">
+                <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+                    <div class="card">
+                        <div class="row m-2">
+                            <h1 class="pt-3">Introdução à lógica de programação </h1>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="row">
+                <div class="row position-absolute" style="bottom: 10%
+                ; left: 49.2%; transform: translateX(-50%)">
+                    <div class="py-5 col-lg-4 mx-auto">
+                        <div class="mouse"></div>
+                        <p class=" uk-text-center ps-5 ">
+                            <span class="py-2 text-white px-3 rounded"
+                                style="background-color:rgba(0, 0, 0, 0.3)!important; border:0!important">Role para
+                                baixo</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- APRESENTACAO -->
+
+        <section class="d-flex min-vh-100 flex-column justify-content-center">
+            <article class="container py-4" id="aula1-section-1">
+                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+                    <div class="section-level1">
+                        <h1>Pensamento computacional e algoritmos: a base da programação</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>
+                        Para começar sua jornada no mundo da programação, é importante compreender os primeiros
+                        conceitos que servem de base para tudo o que vem a seguir. Pensamento computacional, lógica e
+                        algoritmos são os pilares que sustentam essa área do conhecimento.
+                    </p>
+                    <p>
+                        <em>Clique em play e confira uma videoaula sobre a introdução à lógica de programação.</em>
+                    </p>
+
+                </div>
+
+                <!--Video-->
+
+
+                <div class="row">
+
+
+
+                    <div class="videos">
+                        <div class="mb-3 d-flex justify-content-end btn-container">
+                            <button class="btn btn-primary btn-sem-libras px-5 py-2" data-video-id="1"
+                                onclick="toggleAllVideos(false)">
+                                <i class="bi bi-play-fill px-1" aria-label="sem libras"></i>Legendado
+                            </button>
+                            <button class="btn btn-outline-primary btn-com-libras px-5 py-2" data-video-id="1"
+                                onclick="toggleAllVideos(true)">
+                                <i class="bx bx-universal-access px-1" aria-label="com libras"></i>Com Libras
+                            </button>
+                        </div>
+
+
+                        <div class="col-lg-8 mx-auto py-4">
+                            <div id="video-player-1" class="ratio ratio-16x9">
+                                <iframe id="video-iframe-1" class="rounded" title="Apresentação" allowfullscreen
+                                    uk-video=" autoplay:false;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Fim Video-->
+
+
+                <div class="row">
+                    <p>Na rotina, <strong>muitas ações seguem uma sequência</strong>: fazer café, usar um app, operar
+                        máquinas. <strong>Isso é um algoritmo</strong> — uma sequência lógica de passos para realizar
+                        uma tarefa.</p>
+
+                    <p><strong>Exemplo:</strong> para preparar café, a ordem das ações importa. Ligar a cafeteira antes
+                        de moer o café garante que tudo funcione corretamente.</p>
+
+                    <p>Você precisa definir a sequência de passos:</p>
+
+                    <ol>
+                        <li>Ligar a cafeteira</li>
+                        <li>Aquecer a água</li>
+                        <li>Moer o café</li>
+                        <li>Preparar a bebida</li>
+                        <li>Servir</li>
+                    </ol>
+
+                    <p>Esse pensamento estruturado é o que move sistemas e máquinas — e é o que você começará a dominar
+                        a partir de agora.</p>
+
+                    <p>Veja um exemplo de algoritmo em pseudocódigo:</p>
+
+                    <div class="row">
+                        <code
+                            class="m-4">INÍCIO<br>&nbsp;&nbsp;&nbsp;Ligar cafeteira<br>&nbsp;&nbsp;&nbsp;Aquecer água<br>&nbsp;&nbsp;&nbsp;Moer café<br>&nbsp;&nbsp;&nbsp;Preparar bebida<br>&nbsp;&nbsp;&nbsp;Servir café<br>FIM</code>
+                    </div>
+
+                    <p><strong>Observe:</strong> A ordem dos passos influencia diretamente o resultado. Se inverter, o
+                        processo não funciona corretamente. Essa estrutura mostra uma sequência de ações ordenadas —
+                        essa é a base de um algoritmo!</p>
+                </div>
+
+                <div class="row">
+
+
+                    <div class="col-sm-12 col-lg-8 d-flex flex-column justify-content-center">
+                        <p>
+                            Por trás de qualquer aplicativo, sistema ou máquina que funciona automaticamente, existe uma
+                            lógica bem definida. Nada acontece por acaso. Cada ação que o computador executa foi
+                            cuidadosamente pensada, organizada e transformada em comandos que ele entende.</p>
+
+
+                    </div>
+
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <img src="Layout/Aula/img/aula1/img1.webp" alt="Imagem ilustrativa"
+                            class="img-fluid py-4 rounded">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>É nesse contexto que surge a <strong>lógica de programação</strong> — a habilidade de organizar
+                        pensamentos, estruturar informações e criar sequências de instruções para que sistemas, máquinas
+                        e programas funcionem corretamente.</p>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-lg-12 d-none d-lg-block">
+                        <div class="mx-auto">
+                            <img src="Layout/Aula/img/img2.png" alt="Imagem ilustrativa"
+                                class="img-fluid py-4 rounded w-50 mx-auto">
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 col-lg-12 d-flex flex-column justify-content-center">
+                        <p>
+                            Pense, por exemplo, no <strong>funcionamento de uma fábrica</strong>. Antes que um robô mova
+                            uma peça ou um sensor desligue uma máquina, existe uma série de regras, decisões e
+                            sequências programadas. Isso garante que cada etapa do processo aconteça no tempo certo, da
+                            maneira certa e sem erros. Visualize o processo na imagem a seguir:</p>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 mx-auto py-5">
+                        <img src="Layout/Aula/img/ilustra1.png" class="mx-auto img-fluid rounded"
+                            alt="Ilustração do processo de automação de uma fábrica representado por engrenagens interligadas e seis etapas descritas acima de cada engrenagem. As etapas são: “Robô Move Peça” (um robô executa uma ação física em uma peça), “Regras Programadas” (um conjunto de regras predefinidas guia o processo), “Sequências Programadas” (ações organizadas previamente são executadas em ordem lógica), “Sensor Desliga Máquina” (um sensor detecta uma condição e desliga uma máquina), “Decisões Tomadas” (decisões são tomadas para garantir a execução correta) e “Processo Garantido” (o processo é garantido para ser executado corretamente). A animação reforça visualmente a lógica sequencial e automatizada da produção industrial.">
+                    </div>
+
+                    <div class="col-lg-12 my-auto">
+                        <p>Aqui entra o <strong>pensamento computacional</strong>, uma maneira de olhar para os
+                            problemas de forma estruturada, enxergando padrões, quebrando tarefas complexas em partes
+                            menores e planejando soluções eficientes.</p>
+                    </div>
+
+                    <p><em>Clique nos itens do quadro a seguir e explore como esse pensamento se fundamenta em quatro
+                            pilares essenciais.</em></p>
+
+                    <!-- Alterado de acordo com o SB  -->
+                    <!-- <div class="col-lg-8 mx-auto py-4">
+                        <div class="bd-example-snippet bd-code-snippet">
+                            <div class="bd-example">
+                                <nav>
+                                    <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                                        <button class="nav-link active ativo" id="nav-1-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1"
+                                            aria-selected="true">Decomposição</button>
+                                        <button class="nav-link" id="nav-2-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-2" type="button" role="tab" aria-controls="nav-2"
+                                            aria-selected="false" tabindex="-1">Reconhecimento de padrões</button>
+                                        <button class="nav-link" id="nav-3-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-3" type="button" role="tab" aria-controls="nav-3"
+                                            aria-selected="false" tabindex="-1">Abstração</button>
+                                        <button class="nav-link" id="nav-4-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-4" type="button" role="tab" aria-controls="nav-4"
+                                            aria-selected="false" tabindex="-1">Algoritmos</button>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade active show" id="nav-1" role="tabpanel"
+                                        aria-labelledby="nav-1-tab">
+                                        <p>Dividir um problema em partes menores e mais simples.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+                                        <p>Perceber o que se repete, facilitando soluções.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
+                                        <p>Filtrar o que realmente importa, ignorando detalhes irrelevantes.
+                                        </p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
+                                        <p>Criar uma sequência clara de passos que leva à solução.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="accordion my-5" id="accordionExample">
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Decomposição
+                                </button>
+                            </h4>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    <p>Dividir um problema em partes menores e mais simples.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Reconhecimento de padrões
+                                </button>
+                            </h4>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    <p>Perceber o que se repete, facilitando soluções.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Abstração
+                                </button>
+                            </h4>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                <div class="accordion-body">
+                                    <p>Filtrar o que realmente importa, ignorando detalhes irrelevantes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Algoritmos
+                                </button>
+                            </h4>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                                <div class="accordion-body">
+                                    <p>Criar uma sequência clara de passos que leva à solução.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <p>Seja no controle de uma esteira de produção, na gestão de estoque de um supermercado, na
+                        validação de uma compra online ou no caminho que o GPS calcula, tudo depende de uma lógica bem
+                        estruturada.</p>
+
+                    <p>O que faz tudo isso funcionar são os <strong>algoritmos</strong> — verdadeiros roteiros que
+                        dizem, passo a passo, o que deve ser feito, quando e sob quais condições. Sem eles, nenhum
+                        aplicativo, site, robô ou sistema seria capaz de realizar qualquer tarefa.</p>
+                </div>
+
+                <div class="col-lg-4 d-none d-lg-block mx-auto">
+                    <img src="Layout/Aula/img/ilustra2.png" alt="Imagem ilustrativa" class="img-fluid py-4 rounded">
+                </div>
+
+                <div class="row">
+
+
+                    <div class="col-sm-12 col-lg-12 d-flex flex-column justify-content-center">
+                        <p>
+                            Por isso, entender lógica e algoritmos é muito mais que programar: é desenvolver a
+                            capacidade de pensar de forma organizada e eficiente, uma habilidade que serve tanto para
+                            criar softwares quanto para resolver problemas em qualquer área da tecnologia, da indústria
+                            ou até de seu dia a dia.</p>
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <p><em>Clique em play e acompanhe um podcast sobre o pensamento computacional aplicado ao dia a
+                            dia.</em></p>
+
+                    <div class="row py-2">
+                        <i class="bi bi-mic-fill cor1 d-flex justify-content-center" style="font-size:3rem; "></i>
+                    </div>
+                    <div class="mx-auto">
+                        <audio class="uk-align-center" controls controlslist="nodownload">
+                            <source src="#" type="audio/mp3">
+                        </audio>
+                    </div>
+                    <div class="mx-auto">
+                        <button class="uk-button-default rounded uk-align-center ativo" type="button"
+                            uk-toggle="target: #audio-1; animation:  uk-animation-slide-left, uk-animation-slide-bottom"
+                            aria-expanded="false">
+                            <h3 class="m-3">Transcrição</h3>
+                        </button>
+                        <div id="audio-1" class="uk-card uk-card-default uk-card-body uk-margin-small rounded py-5"
+                            hidden="">
+                            <p>
+                                #
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </article>
+
+
+
+
+        </section>
+
+
+
+        <!--É hora de testar seus conhecimentos!!-->
+
+        <section class="container-fluid shadow my-5" style="background-color:#3f7ea7;">
+            <article>
+                <div class="row justify-content-center">
+                    <div class=" col-lg-1 d-flex flex-column justify-content-center">
+                        <img src="Layout/Aula/img/img4.png" alt="Icone de acerto" class=" mx-auto py-3"
+                            style="max-width:100px;">
+                    </div>
+
+                    <div class="col-lg-4 d-flex flex-column justify-content-center">
+                        <p class="text-white text-center pt-4"><strong>É hora de testar seus conhecimentos!!</strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--É hora de testar seus conhecimentos!!-->
+
+
+        <section class="d-flex min-vh-100 flex-column justify-content-center my-5">
+            <article class="container py-4" id="aula1-section-2">
+                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+                    <div class="section-level1">
+                        <h1>Praticando </h1>
+                    </div>
+                    <h2 class="mt-5">Chegou o momento de praticar o que você aprendeu até aqui. Vamos lá!</h2>
+                </div>
+                <div class="row pt-5">
+                    <div class=" mx-auto py-5 border rounded">
+                        <div class="m-3">
+                            <p><strong>1.</strong>Em processos de automação industrial, qual das alternativas a seguir
+                                representa corretamente um conceito fundamental de algoritmos?
+                            </p>
+                        </div>
+                        <div class="row m-2">
+                            <div class="list-group-checkable d-grid gap-2" id="1-alternativas-escolha-unica-1">
+                                <!-- A -->
+                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1"
+                                    id="1-exercicio-escolha-unica-1" data-exercicio1="1" data-alternativa1="a"
+                                    aria-label="Alternativa A" aria-controls="opção A">
+                                <label class="list-group-item  border rounded-3" for="1-exercicio-escolha-unica-1">
+                                    <div class="row">
+                                        <p class="pt-3"><span class="destaque">A)</span>
+                                            <span class="small opacity-80">
+                                                Listar ações operacionais sem nenhuma sequência lógica, pois a ordem não
+                                                afeta a execução.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </label>
+                                <!-- B -->
+                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1"
+                                    id="1-exercicio-escolha-unica-2" data-exercicio1="1" data-alternativa1="b"
+                                    aria-label="Alternativa B" aria-controls="opção B">
+                                <label class="list-group-item border rounded-3" for="1-exercicio-escolha-unica-2">
+                                    <div class="row">
+                                        <p class="pt-3"><span class="destaque">B)</span>
+                                            <span class="small opacity-80">
+                                                Definir uma sequência finita e lógica de etapas para verificar níveis de
+                                                estoque e acionar compras quando necessário.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </label>
+                                <!-- C -->
+                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1"
+                                    id="1-exercicio-escolha-unica-3" data-exercicio1="1" data-alternativa1="c"
+                                    tabindex="-1">
+                                <label class="list-group-item border rounded-3" for="1-exercicio-escolha-unica-3">
+                                    <div class="row">
+                                        <p class="pt-3"><span class="destaque">C)</span>
+                                            <span class="small opacity-80">
+                                                Depender de “intuição” das máquinas para identificar momentos ideais de
+                                                manutenção, sem precisar de instruções claras.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="row m-2">
+                            <div class="collapse" id="collapse-ex1-1">
+                                <!-- mudar o ID de acordo com a questão para não dar conflito pois é identificação para chamar o feedback -->
+                                <div class="card border shadow">
+                                    <div class="card-header">
+                                        <div class="card-title d-inline-flex align-baseline"><i
+                                                class="bi bi-check-circle"></i><span class="ms-1">Parabéns!
+                                                Resposta
+                                                correta.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-3">
+                                        <p>
+                                            Um algoritmo deve seguir etapas lógicas, permitindo que processos sejam
+                                            automatizados de forma previsível e confiável.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- collapsed de resposta incorreta 1 -->
+                            <div class="collapse" id="collapse-ex1-2">
+                                <div class="card border  shadow">
+                                    <div class="card-header">
+                                        <div class="card-title d-inline-flex align-baseline"><i
+                                                class="bi bi-exclamation-circle"></i>
+                                            <span class="ms-1">Tente outra vez! </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-3 text-black-75">
+                                        <p>
+                                            Resposta incorreta.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- collapsed de resposta incorreta 2 -->
+                            <div class="collapse" id="collapse-ex1-3">
+                                <div class="card border shadow">
+                                    <div class="card-header">
+                                        <div class="card-title d-inline-flex align-baseline"><i
+                                                class="bi bi-x-circle"></i>
+                                            <span class="ms-1">Resposta
+                                                incorreta.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-3">
+                                        <p>
+                                            Esta não é a alternativa correta. Se precisar volte ao conteúdo e tente
+                                            novamente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="pt-4">
+                    Com esse exercício, você consolidou mais um passo da sua jornada como programador(a). Vamos seguir
+                    com novos desafios e conteúdos!
+                </p>
+
+
+            </article>
+        </section>
+
+
+
+        <!-- Créditos -->
+        <div class="modal fade" id="creditos" tabindex="-1" aria-labelledby="Modal-creditos" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title center" id="Modal-creditos">Créditos</h5> <button type="button"
+                            class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin: 0"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <p>
+                                <strong>
+                                    SENAI – DEPARTAMENTO REGIONAL DE SÃO PAULO
+                                </strong>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <p>
+                                    <em>
+                                        Ricardo Figueiredo Terra
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Diretor Regional
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p>
+                                    <em>
+                                        Cassia Regina Souza da Cruz
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Gerente de Educação
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="col-lg-5">
+                                <p>
+                                    <em>
+                                        Luiz Carlos de Almeida Filho
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Diretor da Escola SENAI de Educação Online
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="uk-divider-icon">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <p>
+                                    <em>
+                                        Rafael Almeida
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Coordenação técnica e desenvolvimento de conteúdo
+                                    </strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        Adilson Moreira Damasceno
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Melissa Rocha Gabarrone
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Coordenação
+                                    </strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        Laercio Ferreira da Silva
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Adriana Valéria Lucena
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Allan Marcondes de Oliveira
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Maurício Rodrigues de Moraes
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Rafael Felipe Pérsico
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Sueli Diogo
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Escritório de Projetos e Processos
+                                    </strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        Camila Ciarini Dias​<br>
+                                        Alexandre Sinachi​​<br>
+                                        Caio Marques Rodrigues​​<br>
+                                        Ederson Guilherme Antonio Silva​​<br>
+                                        Ezequiel Regino Monção​​<br>
+                                        Fabiano José de Moura​​<br>
+                                        Igor Freitas​​<br>
+                                        Isabella Ferreira​​<br>
+                                        Juliana Rumi Fujishima ​​<br>
+                                        Ligia dos Santos Daghes​​<br>
+                                        Luiz Sansone​​<br>
+                                        Matheus Antônio de Guimarães Elegância​​<br>
+                                        Pedro Lehi Rodrigues Muniz​​<br>
+                                        Rafael Marques Pimenta​​<br>
+                                        Tiago Florêncio da Silva​​
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Produção Multimídia
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="col-lg-2 d-flex  flex-column justify-content-center">
+                                <hr class="uk-divider-vertical d-flex d-none d-sm-block d-md-block d-lg-block">
+                            </div>
+                            <div class="col-lg-5">
+                                <p>
+                                    <em>
+                                        Adriana de Souza Farias
+                                    </em>
+                                    <br>
+                                    <em>
+                                        João Francisco Correia de Souza
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Phillipe Rocca Datovo
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Annadeives Aparecida Conceição Pita
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Carolina Salvino Correa
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Catarine Aurora Nogueira Pereira
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Clarice da Silva Elias
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Cristiane de Barros Rodrigues Favareto
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Cristina Yurie Takahashi
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Fernanda Pereira
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Flávia dos Santos Silveira
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Gisele Torres Silva​
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Jeferson Paiva
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Katya Martinez Almeida
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Mait Paredes
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Marcelo Mauricio da Silva
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Mariana Almeida
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Pyetra Stephannie Rodrigues Costa
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Regina Kambara Hirata
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Simony Pimentel Santos do Nascimento
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Thais Vasconcelos da Silva
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Design de Aprendizagem
+                                    </strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        Rafael Santiago Apolinário
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Aldo Toma Junior
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Armando Victor Pereira
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Douglas Lacerda da Conceição
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Rolfi Cintas Gomes Luz
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Wesley José Pinto Silveira
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Desenvolvimento Tecnológico
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Referência -->
+        <div class="modal fade" id="referencia" tabindex="-1" aria-labelledby="Modal-referencias" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="Modal-referencias">Referências</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Referencias 1-->
+                        <div class="row">
+                            <p>
+                                GRUPO independente de peritos de alto nível sobre a inteligência artificial.
+                                <strong>Comissão
+                                    Europeia</strong>, jun. 2018. Disponível em:
+                                https://digital-strategy.ec.europa.eu/pt/policies/expert-group-ai. Acesso em: 22
+                                fev.
+                                2024.
+                            </p>
+                            <p>
+                                TROIA, S. D.; PARLI, V.; PAVA, J. N.; ZAMAN, H. B. U.; FITZSIMMONS, K. Identificando
+                                a
+                                lacuna de oportunidades de I.A. do setor social. <strong>HAI – Stanford
+                                    University</strong>, 8 fev. 2024.
+                                Disponível em:
+                                https://hai.stanford.edu/inspiring-action-identifying-social-sector-ai-opportunity-gap.
+                                Acesso em: 22 fev. 2024.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed-bottom bg-menu-color">
+        <div class="progress_section">
+            <div class="progress_bar_wrap">
+                <div class="progress_bar"></div>
+            </div>
+            <div class="progress_num">
+            </div>
+        </div>
+
+        <!--Desktop-->
+        <div class="d-flex justify-content-evenly  align-items-center  justify-content-center d-none d-lg-block">
+            <div class="col-sm-12 d-flex  justify-content-center">
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <div class="col-sm-4 d-flex justify-content-end">
+                        <span class="mt-4 text-white"><strong>Introdução​</strong></span><a href="index.html"> <i
+                                class="bx mt-3  bx-fade-riht-hover bxs-left-arrow-circle bx-md copyright px-3"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 d-flex justify-content-center ">
+                        <p class="mx-auto mt-4 pt-2 copyright">© SENAI</p>
+                    </div>
+                    <div class="col-sm-5 d-flex justify-content-start"> <a href="aula-2.html"> <i
+                                class="bx mt-3  bx-fade-riht-hover bxs-right-arrow-circle bx-md copyright px-3"></i>
+                        </a><span class="mt-4 text-white"><strong>Aula 2</strong></span> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Mobile-->
+        <div class="d-flex justify-content-evenly  align-items-center  justify-content-center d-lg-none">
+            <div class="col-sm-12 d-flex  justify-content-center">
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <div class="col-sm-2 d-flex justify-content-end">
+                        <a href="index.html"> <i
+                                class="bx mt-3  bx-fade-riht-hover bxs-left-arrow-circle bx-md copyright px-3"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 d-flex justify-content-center ">
+                        <p class="mx-auto mt-4 copyright">© SENAI</p>
+                    </div>
+                    <div class="col-sm-2 d-flex justify-content-start"> <a href="aula-2.html"> <i
+                                class="bx mt-3  bx-fade-riht-hover bxs-right-arrow-circle bx-md copyright px-3"></i>
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="resumeFromLastModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Aviso</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Parece que você já iniciou o curso, você pode:</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-grid gap-2 mx-auto d-md-flex justify-content-md-end">
+                        <button type="button" class="btn btn-primary" id="resumeFromLastButton">
+                            Continuar de onde parou
+                        </button>
+                        <button type="button" class="btn btn-primary" id="resumeFromBeginning">
+                            Iniciar novamente
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Layout/Template/bibliotecas/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+<script src='Layout/Template/js/chart-plugin.js'></script>
+<script src="Layout/Template/js/main.js"></script>
+<script src="Layout/Template/bibliotecas/bootstrap/js/popper.min.js"></script>
+<script src="Layout/Template/bibliotecas/youtube/js/youtube-chapters.min.js"></script>
+<script src="Layout/Aula/js/graficos.js"></script>
+<script src="Layout/Template/js/exercicios.js"></script>
+<script src="Layout/Aula/js/youtube.js"></script>
+<script src="Layout/Aula/js/anima-lottie.js"></script>
+<script src="Layout/Template/bibliotecas/fancybox/fancybox.umd.js"></script>
+<script src="Layout/Template/bibliotecas/webtour/intro.min.js"></script>
+<script src="menu.js"></script>
+
+<script>
+    Fancybox.bind('[data-fancybox="zoom"]', {
+    });
+</script>
+
+</html>

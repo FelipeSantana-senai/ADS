@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html id="master" lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="Layout/Template/img/favicon.ico" />
+    <title>Senai</title>
+    <!-- Lista de videos -->
+    <script src="videos.js"></script>
+    <!-- Config -->
+    <script src="Layout/Template/js/main.js" defer></script>
+    <link rel="stylesheet" href="Layout/Template/css/theme.css">
+    <link rel="stylesheet" href="Layout/Template/css/style.css">
+    <link rel="stylesheet" href="Layout/Aula/css/add-style.css">
+    <!-- Lottie -->
+    <script src="Layout/Template/bibliotecas/lottie/lottie.js"></script>
+    <script src="Layout/Template/bibliotecas/lottie/lottie-interactivity.min.js"></script>
+    <!-- JQuery-->
+    <script type="text/javascript" src="Layout/Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="Layout/Template/bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="Layout/Template/bibliotecas/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- UiKit-->
+    <link href="Layout/Template/bibliotecas/uikit/css/uikit.min.css" rel="stylesheet" />
+    <script src="Layout/Template/bibliotecas/uikit/js/uikit.min.js" async></script>
+    <script src="Layout/Template/bibliotecas/uikit/js/uikit-icons.min.js" async></script>
+    <!-- BoxIcons -->
+    <link href="Layout/Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+    <script src="Layout/Template/bibliotecas/boxicons/boxicons.js" defer></script>
+    <!-- H5p-player -->
+    <script type="text/javascript" src="Layout/Template/bibliotecas/h5p-player/dist/main.bundle.js"></script>
+    <!-- GOOGLE TRANSLATE -->
+    <script src="Layout/Template/js/google.js" type="text/javascript" defer></script>
+    <!-- SCORM -->
+    <script src="Layout/Template/scorm/APIWrapper.js" defer></script>
+    <script src="Layout/Template/scorm/SCOFunctions.js" defer></script>
+    <!-- BoxIcons -->
+    <script src="Layout/Template/bibliotecas/boxicons/boxicons.js"></script>
+    <link href="Layout/Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+    <!-- Prism  -->
+    <script src="Layout/Template/bibliotecas/prism/js/prism.js"></script>
+    <link href="Layout/Template/bibliotecas/prism/css/prism.css" rel='stylesheet'>
+    <!-- VIDEO DO YOUTUBE -->
+    <link href="Layout/Template/bibliotecas/youtube/css/youtube-chapters.min.css" rel="stylesheet" />
+    <!-- Grafico -->
+    <script src="Layout/Template/bibliotecas/charts/chart.js"></script>
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="Layout/Template/bibliotecas/fancybox/fancybox.css">
+    <!-- webtour -->
+    <link rel="stylesheet" href="Layout/Template/bibliotecas/webtour/introjs.min.css">
+</head>
+
+<body class="font">
+    <header>
+        <div id="google_translate_element"></div>
+        <!-- Vlibras -->
+        <div vw class="enabled">
+            <div id="vlibras-show" vw-access-button class="#"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <!-- Menu -->
+        <nav class="navbar-dark bg-menu-color fixed-top nav-height">
+            <div class="d-flex bd-highlight align-items-center g-2 nav-height">
+                <div class="bd-highlight">
+                    <button class="btn  align-items-center ms-2" data-bs-toggle="offcanvas"
+                        data-bs-target="#nav-menu-open-close" aria-controls="nav-menu-open-close"> <i
+                            class='cor1 bx bx-menu bx-tada-hover'></i> </button>
+                </div>
+                <div class="bd-highlight mx-auto">
+                    <img src="Layout/Template/img/logo.png" class="d-none d-lg-block img-fluid" alt="SENAI"
+                        style="margin-left:150px; max-width:160px">
+                    <img src="Layout/Template/img/logo.png" class="d-md-block d-lg-none" alt="SENAI"
+                        style="margin-top: 5px;max-width: 120px;">
+                </div>
+                <div class="bd-highlight">
+                    <div class="d-flex bd-highlight align-items-center nav-height">
+                        <div class="form-check form-check-inline switch-group">
+                            <input class="form-check-input d-none" type="checkbox" name="themeBtns" id="themeSwitcher"
+                                aria-label="botão de mudança de tema" title="botão de mudança de tema">
+                            <label class="form-check-label" for="themeSwitcher">
+                                <div class="switch-darkmode">
+                                    <div class="icons">
+                                        <i class='bx bx-moon bx-tada-hover' title="tema escuro"></i>
+                                        <i class='bx bx-sun bx-spin-hover' title="tema claro"></i>
+                                    </div>
+                                    <div class="circle"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class=" d-flex flex-row align-middle ">
+                            <button class="btn" type="button" title="visualizar vlibras" onclick="toggleVLibrasAndVideos()">
+                                <i class='vlibras-show bx bx-universal-access  display-6' style="margin-bottom: 0px;"
+                                    aria-label="visualizar vlibras"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown me-2">
+                            <button class="btn text-white me-2" type="button" id="Acessibilidade"
+                                data-bs-toggle="dropdown" aria-expanded="falso" aria-label="Configuração"
+                                title="Configuração">
+                                <i class='bx bx-cog bx-spin-hover bx-sm'></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark menu-margin" aria-labelledby="Acessibilidade">
+                                <li class="dropdown-item">
+                                    <strong>Acessibilidade</strong>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item">
+                                        <div class="mb-3 form-check form-switch">
+                                            <input class="form-check-input " type="checkbox" name="themeBtns"
+                                                id="graySwitcher">
+                                            <label class="form-check-label menu" for="graySwitcher"
+                                                aria-label="visualização monocromático"
+                                                title="visualização monocromático">Modo
+                                                Monocromatico</label>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item">
+                                        <div class="mb-3 form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" name="themeBtns"
+                                                id="daltonicSwitcher">
+                                            <label class="form-check-label menu" for="daltonicSwitcher"
+                                                aria-label="visualização daltônico" title="visualização daltônico">Modo
+                                                Daltônico</label>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-item">
+                                    <span class="menu">Tamanho da Fonte</span>
+                                    <br>
+                                    <input type="range" class="form-range" min="50" max="115" step="5" id="size"
+                                        aria-label="seletor de tamanho da fonte" title="seletor de tamanho da fonte">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="true" data-bs-backdrop="static" tabindex="-1"
+                id="nav-menu-open-close" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header bg-menu-color">
+                    <p class="offcanvas-title" id="staticBackdropLabel">Menu</p> <button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <!-- Menu -->
+                    <nav id="navbar-menu" class="flex-column align-items-stretch pe-4 my-5">
+                        <nav class="nav nav-pills flex-column" id="menu-container"></nav>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main data-bs-spy="scroll" data-bs-offset="0">
+        <!-- Capa -->
+        <section>
+            <article
+                class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+                style="background-image: url('Layout/Template/img/capa.jpeg');">
+                <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+                    <div class="card">
+                        <div class="row m-2">
+                            <h1 class="pt-3">Encerramento</h1>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="row">
+                <div class="row position-absolute" style="bottom: 10%
+                ; left: 49.2%; transform: translateX(-50%)">
+                    <div class="py-5 col-lg-4 mx-auto">
+                       <div class="mouse"></div>
+                       <p class=" uk-text-center ps-5 ">
+                        <span class="py-2 text-white px-3 rounded" style="background-color:rgba(0, 0, 0, 0.3)!important; border:0!important">Role para baixo</span>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- APRESENTACAO -->
+
+        <section class="d-flex min-vh-100 flex-column justify-content-center">
+            <article class="container py-4" id="aula12-section-1">
+                <!-- <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+                    <div class="section-level1">
+                        <h1>Do texto à janela: criando interfaces visuais no Java </h1>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <p>
+                       Olá!
+                    </p>
+
+                    <p>Chegamos ao final da Unidade Curricular <strong>Linguagem de Programação</strong>! Durante essa jornada, desenvolvemos uma base sólida sobre os fundamentos da programação, sempre conectando a teoria à prática em contextos reais da indústria e da tecnologia.
+                    </p>
+
+                    <p>Exploramos desde o pensamento computacional e a construção de algoritmos, até a programação com Java, passando por estruturas sequenciais, condicionais e de repetição. Avançamos para o uso de vetores e matrizes na organização de dados e, por fim, criamos interfaces gráficas que tornam os sistemas mais interativos e acessíveis ao usuário.</p>
+
+                    <p>Ao longo do caminho, aprendemos a planejar soluções com fluxogramas e pseudocódigos, aplicar decisões inteligentes nos sistemas, automatizar tarefas repetitivas e até simular situações reais com elementos visuais.</p>
+
+                    <p>Esta UC mostrou que programar é mais do que escrever códigos: é resolver problemas com lógica, criatividade e precisão.</p>
+
+                    <div class="col-lg-8 mx-auto py-4">
+                        <img src="Layout/Aula/img/aula12/img1.jpeg" alt="Mapa mental com o título central “Linguagem de Programação – ADS | UC”, ramificado em quatro grandes tópicos:
+                        •	Pensamento computacional: abrange lógica, algoritmos e formas de representação (descrição, fluxograma e pseudocódigo);
+                        •	Java – Primeiros passos: aborda sintaxe básica, variáveis, tipos de dados e comandos de entrada/saída com Scanner e JOptionPane;
+                        •	Estruturas de dados: apresenta o uso de vetores (1D) e matrizes (2D) na organização e processamento de dados;
+                        •	Interface gráfica: mostra os elementos gráficos básicos de interação com o usuário, como janelas, botões e menus, implementados com JOptionPane.
+                        A imagem resume visualmente os principais conteúdos abordados ao longo da unidade curricular, reforçando a estrutura lógica e prática do aprendizado em programação.
+                        " class="img-fluid py-4 rounded">
+                    </div>
+
+
+                    <p>Lembre-se, dominar os conceitos aqui apresentados é apenas o começo. Continue praticando, explorando novos projetos e desafiando sua lógica. A linguagem de programação é uma ferramenta poderosa para transformar ideias em soluções!</p>
+
+                    <p>Bons estudos!</p>
+
+                   
+
+
+                    </div>
+
+
+
+                
+            </article>
+
+
+
+
+        </section>
+
+                    
+
+
+        <!-- Créditos -->
+        <div class="modal fade" id="creditos" tabindex="-1" aria-labelledby="Modal-creditos" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title center" id="Modal-creditos">Créditos</h5> <button type="button"
+                            class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin: 0"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <p>
+                                <strong>
+                                    SENAI – DEPARTAMENTO REGIONAL DE SÃO PAULO
+                                </strong>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <p>
+                                    <em>
+                                        Ricardo Figueiredo Terra
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Diretor Regional
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p>
+                                    <em>
+                                        Cassia Regina Souza da Cruz
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Gerente de Educação
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="col-lg-5">
+                                <p>
+                                    <em>
+                                        Luiz Carlos de Almeida Filho
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Diretor da Escola SENAI de Educação Online
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="uk-divider-icon">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <p>
+                                    <em>
+                                        Rafael Almeida
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Coordenação técnica e desenvolvimento de conteúdo
+                                    </strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        Adilson Moreira Damasceno
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Melissa Rocha Gabarrone
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Coordenação
+                                    </strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        Laercio Ferreira da Silva
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Adriana Valéria Lucena
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Allan Marcondes de Oliveira
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Maurício Rodrigues de Moraes
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Rafael Felipe Pérsico
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Sueli Diogo
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Escritório de Projetos e Processos
+                                    </strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        Camila Ciarini Dias​<br>
+                                        Alexandre Sinachi​​<br>
+                                        Caio Marques Rodrigues​​<br>
+                                        Ederson Guilherme Antonio Silva​​<br>
+                                        Ezequiel Regino Monção​​<br>
+                                        Fabiano José de Moura​​<br>
+                                        Igor Freitas​​<br>
+                                        Isabella Ferreira​​<br>
+                                        Juliana Rumi Fujishima ​​<br>
+                                        Ligia dos Santos Daghes​​<br>
+                                        Luiz Sansone​​<br>
+                                        Matheus Antônio de Guimarães Elegância​​<br>
+                                        Pedro Lehi Rodrigues Muniz​​<br>
+                                        Rafael Marques Pimenta​​<br>
+                                        Tiago Florêncio da Silva​​
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Produção Multimídia
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="col-lg-2 d-flex  flex-column justify-content-center">
+                                <hr class="uk-divider-vertical d-flex d-none d-sm-block d-md-block d-lg-block">
+                            </div>
+                            <div class="col-lg-5">
+                                <p>
+                                    <em>
+                                        Adriana de Souza Farias
+                                    </em>
+                                    <br>
+                                    <em>
+                                        João Francisco Correia de Souza
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Phillipe Rocca Datovo
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Annadeives Aparecida Conceição Pita
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Carolina Salvino Correa
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Catarine Aurora Nogueira Pereira
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Clarice da Silva Elias
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Cristiane de Barros Rodrigues Favareto
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Cristina Yurie Takahashi
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Fernanda Pereira
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Flávia dos Santos Silveira
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Gisele Torres Silva​
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Jeferson Paiva
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Katya Martinez Almeida
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Mait Paredes
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Marcelo Mauricio da Silva
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Mariana Almeida
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Pyetra Stephannie Rodrigues Costa
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Regina Kambara Hirata
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Simony Pimentel Santos do Nascimento
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Thais Vasconcelos da Silva
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Design de Aprendizagem
+                                    </strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        Rafael Santiago Apolinário
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Aldo Toma Junior
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Armando Victor Pereira
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Douglas Lacerda da Conceição
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Rolfi Cintas Gomes Luz
+                                    </em>
+                                    <br>
+                                    <em>
+                                        Wesley José Pinto Silveira
+                                    </em>
+                                    <br>
+                                    <strong>
+                                        Desenvolvimento Tecnológico
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Referência -->
+        <div class="modal fade" id="referencia" tabindex="-1" aria-labelledby="Modal-referencias" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="Modal-referencias">Referências</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Referencias 1-->
+                        <div class="row">
+                           <p>DEITEL, P. J.; DEITEL, H. M. <strong>Java</strong>: como programar. 10. ed. São Paulo: Pearson, 2017.</p>
+
+                           <p>FORBELLONE, A. L. V.; EBERSPÄCHER, H. F. <strong>Lógica de programação</strong>: a construção de algoritmos e estruturas de dados. 3. ed. São Paulo: Prentice Hall, 2005.</p>
+
+                           <p>HORSTMANN, C. S.; CORNELL, G. <strong>Core Java</strong>. 8. ed. São Paulo: Pearson, 2009. </p>
+
+                           <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed-bottom bg-menu-color">
+        <div class="progress_section">
+            <div class="progress_bar_wrap">
+                <div class="progress_bar"></div>
+            </div>
+            <div class="progress_num">
+            </div>
+        </div>
+
+        <!--Desktop-->
+        <div class="d-flex justify-content-evenly  align-items-center  justify-content-center d-none d-lg-block">
+            <div class="col-sm-12 d-flex  justify-content-center">
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <div class="col-sm-5 d-flex justify-content-end">
+                        <span class="mt-4 text-white"><strong>Aula 11​</strong></span><a href="aula-11.html"> <i
+                                class="bx mt-3  bx-fade-riht-hover bxs-left-arrow-circle bx-md copyright px-3"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 d-flex justify-content-center ">
+                        <p class="mx-auto mt-4 pt-2 copyright">© SENAI</p>
+                    </div>
+                    <div class="col-sm-5 d-flex justify-content-start" style="visibility: hidden;"> <a href="aula-12.html"> <i
+                                class="bx mt-3  bx-fade-riht-hover bxs-right-arrow-circle bx-md copyright px-3"></i>
+                        </a><span class="mt-4 text-white"><strong>Aula 12</strong></span> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Mobile-->
+        <div class="d-flex justify-content-evenly  align-items-center  justify-content-center d-lg-none">
+            <div class="col-sm-12 d-flex  justify-content-center">
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <div class="col-sm-2 d-flex justify-content-end">
+                        <a href="aula-11.html"> <i
+                                class="bx mt-3  bx-fade-riht-hover bxs-left-arrow-circle bx-md copyright px-3"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 d-flex justify-content-center ">
+                        <p class="mx-auto mt-4 copyright">© SENAI</p>
+                    </div>
+                    <div class="col-sm-2 d-flex justify-content-start" style="visibility: hidden;"> <a href="aula-12.html"> <i
+                                class="bx mt-3  bx-fade-riht-hover bxs-right-arrow-circle bx-md copyright px-3"></i>
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="resumeFromLastModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Aviso</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Parece que você já iniciou o curso, você pode:</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-grid gap-2 mx-auto d-md-flex justify-content-md-end">
+                        <button type="button" class="btn btn-primary" id="resumeFromLastButton">
+                            Continuar de onde parou
+                        </button>
+                        <button type="button" class="btn btn-primary" id="resumeFromBeginning">
+                            Iniciar novamente
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Layout/Template/bibliotecas/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+<script src='Layout/Template/js/chart-plugin.js'></script>
+<script src="Layout/Template/js/main.js"></script>
+<script src="Layout/Template/bibliotecas/bootstrap/js/popper.min.js"></script>
+<script src="Layout/Template/bibliotecas/youtube/js/youtube-chapters.min.js"></script>
+<script src="Layout/Aula/js/graficos.js"></script>
+<script src="Layout/Template/js/exercicios11.js"></script>
+<script src="Layout/Aula/js/youtube.js"></script>
+<script src="Layout/Aula/js/anima-lottie.js"></script>
+<script src="Layout/Template/bibliotecas/fancybox/fancybox.umd.js"></script>
+<script src="Layout/Template/bibliotecas/webtour/intro.min.js"></script>
+<script src="menu.js"></script>
+
+<script>
+    Fancybox.bind('[data-fancybox="zoom"]', {
+    });
+</script>
+
+</html>
