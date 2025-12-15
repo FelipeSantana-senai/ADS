@@ -43,3 +43,8 @@
     left: 16.2%;
 }
 
+/* Classes Auviliares */
+
+.scale-2 {
+    transform: scale(2);
+}
