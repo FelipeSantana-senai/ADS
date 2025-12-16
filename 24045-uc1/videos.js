@@ -32,20 +32,20 @@ const videos = {
         comLibras: "https://www.youtube.com/embed/mgFwYzX550E?si=-FbylqeR8z1nu0nn"
     },
     9: {
-        semLibras: "https://www.youtube.com/embed/MMf_YEXKLog?si=bGetkV7agCnnM0oT",
-        comLibras: "https://www.youtube.com/embed/mqP_PfBpeBM?si=SLwlT0jgdgCp_lPF"
+        semLibras: "https://www.youtube.com/embed/Ttq9dNKSByU?si=YMLL-Gzs9vBuY8E0",
+        comLibras: "https://www.youtube.com/embed/TSBGkY8bAXk?si=LOzKqyYZSobZQqbQ"
     },
     10: {
-        semLibras: "https://www.youtube.com/embed/3CKbFE4WVmo?si=WpbvbnPOOJA5Vjh5",
-        comLibras: "https://www.youtube.com/embed/Hz_4V8htbAU?si=KEImcGv5CpAAF5E1"
+        semLibras: "https://www.youtube.com/embed/MMf_YEXKLog?si=jOtYY0Xf3a5sHLEO",
+        comLibras: "https://www.youtube.com/embed/mqP_PfBpeBM?si=D_UUpD3srY0eF3-U"
     },
     11: {
-        semLibras: "https://www.youtube.com/embed/YzlFp78AYAg?si=BRZbeT7VwCerS0Kx",
-        comLibras: "https://www.youtube.com/embed/7saNJSiivDk?si=cV3hotNsCtbVYh3v"
+        semLibras: "https://www.youtube.com/embed/3CKbFE4WVmo?si=9B4TuUDceE_NljFi",
+        comLibras: "https://www.youtube.com/embed/Hz_4V8htbAU?si=2QtzsUaEjBsx-4ZP"
     },
     12: {
-        semLibras: "https://www.youtube.com/embed/ASEihSIsMs8?si=7Ax0s0ZfxlZCustm",
-        comLibras: "https://www.youtube.com/embed/WpoALCgLepM?si=q6FiZDY7fD68IB1K"
+        semLibras: "https://www.youtube.com/embed/YzlFp78AYAg?si=0DSSb8MQUnPIMkcq",
+        comLibras: "https://www.youtube.com/embed/7saNJSiivDk?si=A3Igc6tc_g05FsXQ"
     },
     13: {
         semLibras: "https://www.youtube.com/embed/g8TFSexiVwg?si=u1aa_4vsB_ip7pY-",
