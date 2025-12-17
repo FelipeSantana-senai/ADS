@@ -1,50 +1,119 @@
 #item-spot1 {
-    top: 75.6%;
-    left: 19%;
+    top: 76.6%;
+    left: 29.3%;
 }
 
 #item-spot2 {
-    top: 56.8%;
-    left: 36.4%;
+    top: 56.5%;
+    left: 40.7%;
 }
 
 #item-spot3 {
-    top: 38.1%;
-    left: 53.6%;
+    top: 36.5%;
+    left: 52.1%;
 }
 
 #item-spot4 {
-    top: 19%;
-    left: 71.4%;
+    top: 15.5%;
+    left: 63.8%;
 }
 
 #item-spot5 {
-    top: 61.4%;
-    left: 48.4%;
+    top: 2.9%;
+    left: 33%;
 }
 
 #item-spot6 {
-    top: 38.5%;
-    left: 54.7%;
+    top: 2.5%;
+    left: 66%;
 }
 
 #item-spot7 {
-    top: 14.3%;
-    left: 67%;
+    top: 25.8%;
+    left: 14.2%;
 }
 
 #item-spot8 {
-    top: 78%;
-    left: 33.65%;
+    top: 54.8%;
+    left: 26.4%;
 }
 
 #item-spot9 {
-    top: 8.5%;
-    left: 16.2%;
+    top: 54.8%;
+    left: 51.4%;
+}
+
+#item-spot10 {
+    top: 25.8%;
+    left: 38.8%;
+}
+
+#item-spot11 {
+    top: 25.8%;
+    left: 63.5%;
+}
+
+#item-spot12 {
+    top: 54.7%;
+    left: 75.8%;
+}
+
+#item-spot13 {
+    top: 5.7%;
+    left: 11%;
+}
+
+#item-spot14 {
+    top: 37.7%;
+    left: 11%;
+}
+
+#item-spot15 {
+    top: 68%;
+    left: 11%;
+}
+
+#item-spot16 {
+    top: 2.6%;
+    left: -1%;
 }
 
 /* Classes Auviliares */
 
 .scale-2 {
     transform: scale(2);
+}
+
+.losango {
+    width: 10%;
+    height: 10%;
+    transform: rotate(45deg);
+    margin: 50px;
+    border: none !important;
+}
+
+
+/* Responsivo */
+@media (max-width: 1280px) {
+    #item-spot16 {
+        top: 0.5%;
+        left: -1.7%;
+    }
+
+    #item-spot5 {
+        top: 0.5%;
+        left: 32%;
+    }
+
+    #item-spot6 {
+        top: 0.5%;
+        left: 64.6%;
+    }
+}
+
+@media (max-width: 400px) {
+    .scale-2 {
+        transform: scale(1.5);
+        margin-bottom: 5%;
+    }
 }
