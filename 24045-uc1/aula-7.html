@@ -97,7 +97,8 @@
                             </label>
                         </div>
                         <div class=" d-flex flex-row align-middle ">
-                            <button class="btn" type="button" title="visualizar vlibras" onclick="toggleVLibrasAndVideos()">
+                            <button class="btn" type="button" title="visualizar vlibras"
+                                onclick="toggleVLibrasAndVideos()">
                                 <i class='vlibras-show bx bx-universal-access  display-6' style="margin-bottom: 0px;"
                                     aria-label="visualizar vlibras"></i>
                             </button>
@@ -172,11 +173,11 @@
         <section>
             <article
                 class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
-                style="background-image: url('Layout/Template/img/capa.jpeg');">
+                style="background-image: url('Layout/Aula/img/aula7/capa.jpg');">
                 <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
                     <div class="card">
                         <div class="row m-2">
-                            <h1 class="pt-3">Estruturas de repetição – parte 1</h1>
+                            <h1 class="pt-3">Repetindo tarefas: laço enquanto (while)​</h1>
                         </div>
                     </div>
                 </div>
@@ -185,10 +186,12 @@
                 <div class="row position-absolute" style="bottom: 10%
                 ; left: 49.2%; transform: translateX(-50%)">
                     <div class="py-5 col-lg-4 mx-auto">
-                       <div class="mouse"></div>
-                       <p class=" uk-text-center ps-5 ">
-                        <span class="py-2 text-white px-3 rounded" style="background-color:rgba(0, 0, 0, 0.3)!important; border:0!important">Role para baixo</span>
-                    </p>
+                        <div class="mouse"></div>
+                        <p class=" uk-text-center ps-5 ">
+                            <span class="py-2 text-white px-3 rounded"
+                                style="background-color:rgba(0, 0, 0, 0.3)!important; border:0!important">Role para
+                                baixo</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -197,32 +200,42 @@
 
         <section class="d-flex min-vh-100 flex-column justify-content-center">
             <article class="container py-4" id="aula7-section-1">
-                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+                <!-- <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
                     <div class="section-level1">
                         <h1>Repetindo tarefas: laço enquanto (while)</h1>
                     </div>
-                </div>
-                <div class="row">
+                </div> -->
+                <div class="ro mt-5">
                     <p>
-                        Depois de aprender como tomar decisões com base em condições usando as estruturas condicionais, chegou a hora de explorar situações em que certas ações precisam ser repetidas diversas vezes. Nesta aula, você conhecerá o laço de repetição <mark>while</mark>, que permite executar comandos enquanto uma condição for verdadeira.
+                        Depois de aprender como tomar decisões com base em condições usando as estruturas condicionais,
+                        chegou a hora de explorar situações em que certas ações precisam ser repetidas diversas vezes.
+                        Nesta aula, você conhecerá o laço de repetição <mark>while</mark>, que permite executar comandos
+                        enquanto uma condição for verdadeira.
                     </p>
 
-                    <p>Muitos processos reais repetem ações, como sensores ou esteiras. O laço <mark>while</mark> permite repetir comandos enquanto uma condição for verdadeira.</p>
+                    <p>Muitos processos reais repetem ações, como sensores ou esteiras. O laço <mark>while</mark>
+                        permite repetir comandos enquanto uma condição for verdadeira.</p>
 
-                    <p>Pense em uma esteira de produção: ela não para enquanto houver peças chegando. Ou imagine um sistema que monitora sensores de temperatura. Ele precisa ler os dados constantemente, não só uma vez.</p>
+                    <p>Pense em uma esteira de produção: ela não para enquanto houver peças chegando. Ou imagine um
+                        sistema que monitora sensores de temperatura. Ele precisa ler os dados constantemente, não só
+                        uma vez.</p>
 
-                    <p>Na programação, esse tipo de comportamento é possível graças às <strong>estruturas de repetição</strong>, e aqui surge um conceito muito importante: o laço <mark>“enquanto” (while)</mark>.</p>
+                    <p>Na programação, esse tipo de comportamento é possível graças às <strong>estruturas de
+                            repetição</strong>, e aqui surge um conceito muito importante: o laço <mark>“enquanto”
+                            (while)</mark>.</p>
 
-                    <p><strong>Funciona assim:</strong> enquanto uma condição for considerada verdadeira, o sistema continuará repetindo a ação determinada. Assim que essa condição deixar de ser verdadeira, o sistema interrompe a execução.</p>
+                    <p><strong>Funciona assim:</strong> enquanto uma condição for considerada verdadeira, o sistema
+                        continuará repetindo a ação determinada. Assim que essa condição deixar de ser verdadeira, o
+                        sistema interrompe a execução.</p>
 
                     <p>Conheça na ilustração a seguir como esse processo ocorre passo a passo:</p>
-                    
+
 
 
                 </div>
 
                 <div class="row">
-                
+
 
                     <!--Pontos de Destaque Desktop-->
                     <!-- <p class="d-none d-lg-block">
@@ -234,272 +247,339 @@
 
                     <div class="col-lg-8 mx-auto py-5 d-none d-lg-block">
                         <div id="highlight-img" class="highlight-dark" name="highlight-img">
-                            <a href="#" id="item-spot7" class="highlight-spot rounded-circle border-0" style="width: 11.3%; height: 19.3%;" data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-1" aria-expanded="false"></a>
-                            <a href="#" id="item-spot8" class="highlight-spot rounded-circle border-0" style="width: 11.3%; height: 19.3%;" data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-2" aria-expanded="false"></a>
-                            <a href="#" id="item-spot9" class="highlight-spot rounded-circle border-0" style="width: 11.3%; height: 19.3%;" data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-4" aria-expanded="false"></a>
-                            <a href="#" id="item-spot10" class="highlight-spot rounded-circle border-0" style="width: 11.3%; height: 19.3%;" data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-3" aria-expanded="false"></a>
-                            <a href="#" id="item-spot11" class="highlight-spot rounded-circle border-0" style="width: 11.3%; height: 19.3%;" data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-5" aria-expanded="false"></a>
-                            <a href="#" id="item-spot12" class="highlight-spot rounded-circle border-0" style="width: 11.3%; height: 19.3%;" data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-6" aria-expanded="false"></a>
-                          
-                           
-                            <img src="Layout/Aula/img/aula7/ilustra1.png" class="img-fluid mx-auto" alt="Ilustração do funcionamento de uma estrutura de repetição 'enquanto' (while). O diagrama mostra o ciclo em que o sistema avalia uma condição; se for verdadeira, executa uma ação e repete o processo. O fluxo se mantém até que a condição se torne falsa, momento em que a ação é interrompida. Ideal para representar laços de repetição em lógica de programação.">
+                            <a href="#" id="item-spot7" class="highlight-spot rounded-circle border-0"
+                                style="width: 11.3%; height: 19.3%;" data-bs-toggle="modal"
+                                uk-toggle="target: #modal-highlight-img-1" aria-expanded="false"></a>
+                            <a href="#" id="item-spot8" class="highlight-spot rounded-circle border-0"
+                                style="width: 11.3%; height: 19.3%;" data-bs-toggle="modal"
+                                uk-toggle="target: #modal-highlight-img-2" aria-expanded="false"></a>
+                            <a href="#" id="item-spot9" class="highlight-spot rounded-circle border-0"
+                                style="width: 11.3%; height: 19.3%;" data-bs-toggle="modal"
+                                uk-toggle="target: #modal-highlight-img-4" aria-expanded="false"></a>
+                            <a href="#" id="item-spot10" class="highlight-spot rounded-circle border-0"
+                                style="width: 11.3%; height: 19.3%;" data-bs-toggle="modal"
+                                uk-toggle="target: #modal-highlight-img-3" aria-expanded="false"></a>
+                            <a href="#" id="item-spot11" class="highlight-spot rounded-circle border-0"
+                                style="width: 11.3%; height: 19.3%;" data-bs-toggle="modal"
+                                uk-toggle="target: #modal-highlight-img-5" aria-expanded="false"></a>
+                            <a href="#" id="item-spot12" class="highlight-spot rounded-circle border-0"
+                                style="width: 11.3%; height: 19.3%;" data-bs-toggle="modal"
+                                uk-toggle="target: #modal-highlight-img-6" aria-expanded="false"></a>
+
+
+                            <img src="Layout/Aula/img/aula7/ilustra1.png" class="img-fluid mx-auto"
+                                alt="Ilustração do funcionamento de uma estrutura de repetição 'enquanto' (while). O diagrama mostra o ciclo em que o sistema avalia uma condição; se for verdadeira, executa uma ação e repete o processo. O fluxo se mantém até que a condição se torne falsa, momento em que a ação é interrompida. Ideal para representar laços de repetição em lógica de programação.">
                         </div>
                     </div>
 
-<!--Fim do Ponto de Destaque Desktop-->
+                    <!--Fim do Ponto de Destaque Desktop-->
 
 
-<!--Cards Mobile-->
+                    <!--Cards Mobile-->
 
-<div class="col-lg-12 d-lg-none">
-    <a data-fancybox="zoom" data-src="Layout/Aula/img/aula7/ilustra1.png" data-caption="">
-        <img src="Layout/Aula/img/aula7/ilustra1.png" class="img-fluid mx-auto my-4" alt="Ilustração do funcionamento de uma estrutura de repetição 'enquanto' (while). O diagrama mostra o ciclo em que o sistema avalia uma condição; se for verdadeira, executa uma ação e repete o processo. O fluxo se mantém até que a condição se torne falsa, momento em que a ação é interrompida. Ideal para representar laços de repetição em lógica de programação.">
-     </a>
-
-    
-
-    <div class="uk-card uk-card-default my-4" style="border-color: #3f7ea7;">
-        <div class="uk-card-body">
-            <h3 class="uk-card-title">Verificar condição</h3>
-            <p>O sistema avalia se a condição é verdadeira.</p>
-        </div>
-    </div>
-
-
-    <div class="uk-card uk-card-default my-4" style="border-color:#f7931e">
-        <div class="uk-card-body">
-            <h3 class="uk-card-title">Condição verdadeira</h3>
-            <p>A condição é determinada como verdadeira.</p>
-        </div>
-    </div>
+                    <div class="col-lg-12 d-lg-none">
+                        <a data-fancybox="zoom" data-src="Layout/Aula/img/aula7/ilustra1.png" data-caption="">
+                            <img src="Layout/Aula/img/aula7/ilustra1.png" class="img-fluid mx-auto my-4"
+                                alt="Ilustração do funcionamento de uma estrutura de repetição 'enquanto' (while). O diagrama mostra o ciclo em que o sistema avalia uma condição; se for verdadeira, executa uma ação e repete o processo. O fluxo se mantém até que a condição se torne falsa, momento em que a ação é interrompida. Ideal para representar laços de repetição em lógica de programação.">
+                        </a>
 
 
 
-    <div class="uk-card uk-card-default my-4" style="border-color:#7c4d9e">
-        <div class="uk-card-body">
-            <h3 class="uk-card-title">Executar ação</h3>
-            <p>O sistema executa a ação especificada.</p>
-        </div>
-    </div>
+                        <div class="uk-card uk-card-default my-4" style="border-color: #3f7ea7;">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Verificar condição</h3>
+                                <p>O sistema avalia se a condição é verdadeira.</p>
+                            </div>
+                        </div>
 
-    <div class="uk-card uk-card-default my-4" style="border-color:#7c4d9e">
-        <div class="uk-card-body">
-            <h3 class="uk-card-title">Repetir ação</h3>
-            <p>O sistema repete a ação enquanto a condição permanecer verdadeira.</p>
-        </div>
-    </div>
 
-    <div class="uk-card uk-card-default my-4" style="border-color:#7c4d9e">
-        <div class="uk-card-body">
-            <h3 class="uk-card-title">Condição falsa</h3>
-            <p>A condição é determinada como falsa.</p>
-        </div>
-    </div>
-
-    <div class="uk-card uk-card-default my-4" style="border-color:#7c4d9e">
-        <div class="uk-card-body">
-            <h3 class="uk-card-title">Parar ação</h3>
-            <p>O sistema para de executar a ação.</p>
-        </div>
-    </div>
+                        <div class="uk-card uk-card-default my-4" style="border-color:#f7931e">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Condição verdadeira</h3>
+                                <p>A condição é determinada como verdadeira.</p>
+                            </div>
+                        </div>
 
 
 
-   
+                        <div class="uk-card uk-card-default my-4" style="border-color:#7c4d9e">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Executar ação</h3>
+                                <p>O sistema executa a ação especificada.</p>
+                            </div>
+                        </div>
 
-</div>
+                        <div class="uk-card uk-card-default my-4" style="border-color:#7c4d9e">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Repetir ação</h3>
+                                <p>O sistema repete a ação enquanto a condição permanecer verdadeira.</p>
+                            </div>
+                        </div>
 
+                        <div class="uk-card uk-card-default my-4" style="border-color:#7c4d9e">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Condição falsa</h3>
+                                <p>A condição é determinada como falsa.</p>
+                            </div>
+                        </div>
 
-<!--Fim Cards Mobile-->
-</div>
-
-
-
-<div class="row">
-    <p>Veja exemplos práticos em que isso ocorre:</p>
-
-
-    <div class="col-md-8 mx-auto py-5">
-        <div class="bd-example-snippet bd-code-snippet">
-          <div class="accordion" id="1-accordion">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="1-collapse-cabecalho-1">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1-collapse-1" aria-expanded="false" aria-controls="1-collapse-1" aria-labelledby="Segurança energética">Enquanto houver estoque ➝ 
-                </button>
-              </h4>
-              <div id="1-collapse-1" class="accordion-collapse collapse" data-bs-parent="#1-accordion">
-                <div class="accordion-body">
-                 <p>Continuar vendendo.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="1-collapse-cabecalho-2"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1-collapse-2" aria-expanded="false" aria-controls="1-collapse-2" aria-labelledby="Titulo 2">
-                Enquanto a temperatura estiver dentro do limite ➝</button> </h4>
-              <div id="1-collapse-2" class="accordion-collapse collapse" data-bs-parent="#1-accordion">
-                <div class="accordion-body">
-                  <p>Manter o motor ligado.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="1-collapse-cabecalho-3">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1-collapse-3" aria-expanded="false" aria-controls="1-collapse-3" aria-labelledby="Titulo 1">Enquanto houver dados para ler ➝ </button>
-              </h4>
-              <div id="1-collapse-3" class="accordion-collapse collapse" data-bs-parent="#1-accordion">
-                <div class="accordion-body">
-                 <p>Continuar processando.</p>
-                </div>
-              </div>
-            </div>
-           
-           
-          </div>
-        </div>
-      </div>
+                        <div class="uk-card uk-card-default my-4" style="border-color:#7c4d9e">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Parar ação</h3>
+                                <p>O sistema para de executar a ação.</p>
+                            </div>
+                        </div>
 
 
 
-    <p>Além disso, comandos como <strong>break</strong> e <strong>continue</strong> ajudam a controlar essas repetições:</p>
 
 
-    <div class="col-lg-8 mx-auto py-4">
-        <div class="bd-example-snippet bd-code-snippet">
-            <div class="bd-example">
-                <nav>
-                    <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
-                        <button class="nav-link active ativo" id="nav-1-tab" data-bs-toggle="tab" data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1" aria-selected="true">break </button>
-                        <button class="nav-link" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab" aria-controls="nav-2" aria-selected="false" tabindex="-1">continue</button>
-                      
-                        
                     </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade active show" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
-                        <p>Serve para interromper a repetição quando algo específico acontece.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
-                        <p>Faz o sistema pular uma execução específica e seguir para a próxima.
-                        </p>
-                    </div>
-                  
 
-                
+
+                    <!--Fim Cards Mobile-->
                 </div>
-            </div>
-        </div>
-    </div>
 
 
-<p>Sem essa lógica, seria impossível automatizar processos, monitorar dados em tempo real ou fazer sistemas executarem tarefas de forma contínua e eficiente.</p>
 
-<p>Agora que você compreendeu o funcionamento do <mark>laço while</mark> e sua aplicação em cenários repetitivos, é hora de ver esse conhecimento sendo aplicado na prática.</p>
-
-<p><em>Clique em play e acompanhe as videoaulas sobre estruturas de repetição – laço enquanto (while): soma de pesos de cargas.</em></p>
+                <div class="row">
+                    <p>Veja exemplos práticos em que isso ocorre:</p>
 
 
-</div>
+                    <div class="col-md-8 mx-auto py-5">
+                        <div class="bd-example-snippet bd-code-snippet">
+                            <div class="accordion" id="1-accordion">
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="1-collapse-cabecalho-1">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#1-collapse-1"
+                                            aria-expanded="false" aria-controls="1-collapse-1"
+                                            aria-labelledby="Segurança energética">Enquanto houver estoque ➝
+                                        </button>
+                                    </h4>
+                                    <div id="1-collapse-1" class="accordion-collapse collapse"
+                                        data-bs-parent="#1-accordion">
+                                        <div class="accordion-body">
+                                            <p>Continuar vendendo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="1-collapse-cabecalho-2"> <button
+                                            class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#1-collapse-2" aria-expanded="false"
+                                            aria-controls="1-collapse-2" aria-labelledby="Titulo 2">
+                                            Enquanto a temperatura estiver dentro do limite ➝</button> </h4>
+                                    <div id="1-collapse-2" class="accordion-collapse collapse"
+                                        data-bs-parent="#1-accordion">
+                                        <div class="accordion-body">
+                                            <p>Manter o motor ligado.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="1-collapse-cabecalho-3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#1-collapse-3"
+                                            aria-expanded="false" aria-controls="1-collapse-3"
+                                            aria-labelledby="Titulo 1">Enquanto houver dados para ler ➝ </button>
+                                    </h4>
+                                    <div id="1-collapse-3" class="accordion-collapse collapse"
+                                        data-bs-parent="#1-accordion">
+                                        <div class="accordion-body">
+                                            <p>Continuar processando.</p>
+                                        </div>
+                                    </div>
+                                </div>
 
 
-                    <!--Video-->
+                            </div>
+                        </div>
+                    </div>
 
 
-                    <div class="row">
 
-                 
-                                 
-                        <div class="videos">
-                     <div class="mb-3 d-flex justify-content-end btn-container">
-                         <button class="btn btn-primary btn-sem-libras px-5 py-2" data-video-id="15" onclick="toggleAllVideos(false)">
-                             <i class="bi bi-play-fill px-1" aria-label="sem libras"></i>Legendado
-                         </button>
-                         <button class="btn btn-outline-primary btn-com-libras px-5 py-2" data-video-id="15" onclick="toggleAllVideos(true)">
-                             <i class="bx bx-universal-access px-1" aria-label="com libras"></i>Com Libras
-                         </button>
-                             </div>
-                            
-                     
-                             <div class="col-lg-8 mx-auto py-4">
-                                          <div id="video-player-15" class="ratio ratio-16x9">
-                                 <iframe id="video-iframe-15" class="rounded" title="Apresentação" allowfullscreen uk-video=" autoplay:false;"></iframe>
-                             </div>
-                                     </div>
-                                         </div>
-                     
-                                     </div>
-                     <!--Fim Video-->
+                    <p>Além disso, comandos como <strong>break</strong> e <strong>continue</strong> ajudam a controlar
+                        essas repetições:</p>
 
 
-                    <div class="row">
-                        <p><em>Clique em play e acompanhe as videoaulas sobre estruturas de repetição – laço enquanto (while): leitura de temperaturas.</em></p>
-                    </div> 
+                    <div class="col-lg-8 mx-auto py-4">
+                        <div class="bd-example-snippet bd-code-snippet">
+                            <div class="bd-example">
+                                <nav>
+                                    <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                                        <button class="nav-link active ativo" id="nav-1-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1"
+                                            aria-selected="true">break </button>
+                                        <button class="nav-link" id="nav-2-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-2" type="button" role="tab" aria-controls="nav-2"
+                                            aria-selected="false" tabindex="-1">continue</button>
 
 
-                     <!--Video-->
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade active show" id="nav-1" role="tabpanel"
+                                        aria-labelledby="nav-1-tab">
+                                        <p>Serve para interromper a repetição quando algo específico acontece.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+                                        <p>Faz o sistema pular uma execução específica e seguir para a próxima.
+                                        </p>
+                                    </div>
 
 
-                     <div class="row">
 
-                 
-                                 
-                        <div class="videos">
-                     <div class="mb-3 d-flex justify-content-end btn-container">
-                         <button class="btn btn-primary btn-sem-libras px-5 py-2" data-video-id="16" onclick="toggleAllVideos(false)">
-                             <i class="bi bi-play-fill px-1" aria-label="sem libras"></i>Legendado
-                         </button>
-                         <button class="btn btn-outline-primary btn-com-libras px-5 py-2" data-video-id="16" onclick="toggleAllVideos(true)">
-                             <i class="bx bx-universal-access px-1" aria-label="com libras"></i>Com Libras
-                         </button>
-                             </div>
-                            
-                     
-                             <div class="col-lg-8 mx-auto py-4">
-                                          <div id="video-player-16" class="ratio ratio-16x9">
-                                 <iframe id="video-iframe-16" class="rounded" title="Apresentação" allowfullscreen uk-video=" autoplay:false;"></iframe>
-                             </div>
-                                     </div>
-                                         </div>
-                     
-                                     </div>
-                     <!--Fim Video-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-                     <div class="row">
-                        <p><em>Clique em play e acompanhe as videoaulas sobre estruturas de repetição – laço enquanto (while): monitoramento de energia.</em></p>
-                    </div> 
 
 
-                      <!--Video-->
+                </div>
+
+            </article>
+        </section>
+
+        <section class="d-flex flex-column justify-content-center">
+            <article class="container py-4">
+
+                <p>Sem essa lógica, seria impossível automatizar processos, monitorar dados em tempo real ou fazer
+                    sistemas executarem tarefas de forma contínua e eficiente.</p>
+
+                <p>Agora que você compreendeu o funcionamento do <mark>laço while</mark> e sua aplicação em cenários
+                    repetitivos, é hora de ver esse conhecimento sendo aplicado na prática.</p>
+
+                <p><em>Clique em play e acompanhe as videoaulas sobre estruturas de repetição – laço enquanto (while):
+                        soma de pesos de cargas.</em></p>
+
+            </article>
+        </section>
+
+        <section class="d-flex flex-column justify-content-center">
+            <article class="container py-4">
+                <!--Video-->
 
 
-                      <div class="row">
-
-                 
-                                 
-                        <div class="videos">
-                     <div class="mb-3 d-flex justify-content-end btn-container">
-                         <button class="btn btn-primary btn-sem-libras px-5 py-2" data-video-id="17" onclick="toggleAllVideos(false)">
-                             <i class="bi bi-play-fill px-1" aria-label="sem libras"></i>Legendado
-                         </button>
-                         <button class="btn btn-outline-primary btn-com-libras px-5 py-2" data-video-id="17" onclick="toggleAllVideos(true)">
-                             <i class="bx bx-universal-access px-1" aria-label="com libras"></i>Com Libras
-                         </button>
-                             </div>
-                            
-                     
-                             <div class="col-lg-8 mx-auto py-4">
-                                          <div id="video-player-17" class="ratio ratio-16x9">
-                                 <iframe id="video-iframe-17" class="rounded" title="Apresentação" allowfullscreen uk-video=" autoplay:false;"></iframe>
-                             </div>
-                                     </div>
-                                         </div>
-                     
-                                     </div>
-                     <!--Fim Video-->
+                <div class="row">
 
 
-                
+
+                    <div class="videos">
+                        <div class="mb-3 d-flex justify-content-end btn-container">
+                            <button class="btn btn-primary btn-sem-libras px-5 py-2" data-video-id="15"
+                                onclick="toggleAllVideos(false)">
+                                <i class="bi bi-play-fill px-1" aria-label="sem libras"></i>Legendado
+                            </button>
+                            <button class="btn btn-outline-primary btn-com-libras px-5 py-2" data-video-id="15"
+                                onclick="toggleAllVideos(true)">
+                                <i class="bx bx-universal-access px-1" aria-label="com libras"></i>Com Libras
+                            </button>
+                        </div>
+
+
+                        <div class="col-lg-8 mx-auto py-4">
+                            <div id="video-player-15" class="ratio ratio-16x9">
+                                <iframe id="video-iframe-15" class="rounded" title="Apresentação" allowfullscreen
+                                    uk-video=" autoplay:false;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Fim Video-->
+
+
+                <div class="row">
+                    <p><em>Clique em play e acompanhe as videoaulas sobre estruturas de repetição – laço enquanto
+                            (while): leitura de temperaturas.</em></p>
+                </div>
+
+            </article>
+        </section>
+
+        <section class="d-flex flex-column justify-content-center">
+            <article class="container py-4">
+
+                <!--Video-->
+
+
+                <div class="row">
+
+
+
+                    <div class="videos">
+                        <div class="mb-3 d-flex justify-content-end btn-container">
+                            <button class="btn btn-primary btn-sem-libras px-5 py-2" data-video-id="16"
+                                onclick="toggleAllVideos(false)">
+                                <i class="bi bi-play-fill px-1" aria-label="sem libras"></i>Legendado
+                            </button>
+                            <button class="btn btn-outline-primary btn-com-libras px-5 py-2" data-video-id="16"
+                                onclick="toggleAllVideos(true)">
+                                <i class="bx bx-universal-access px-1" aria-label="com libras"></i>Com Libras
+                            </button>
+                        </div>
+
+
+                        <div class="col-lg-8 mx-auto py-4">
+                            <div id="video-player-16" class="ratio ratio-16x9">
+                                <iframe id="video-iframe-16" class="rounded" title="Apresentação" allowfullscreen
+                                    uk-video=" autoplay:false;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Fim Video-->
+
+
+                <div class="row">
+                    <p><em>Clique em play e acompanhe as videoaulas sobre estruturas de repetição – laço enquanto
+                            (while): monitoramento de energia.</em></p>
+                </div>
+
+            </article>
+        </section>
+
+        <section class="d-flex flex-column justify-content-center">
+            <article class="container py-4">
+
+                <!--Video-->
+
+
+                <div class="row">
+
+
+
+                    <div class="videos">
+                        <div class="mb-3 d-flex justify-content-end btn-container">
+                            <button class="btn btn-primary btn-sem-libras px-5 py-2" data-video-id="17"
+                                onclick="toggleAllVideos(false)">
+                                <i class="bi bi-play-fill px-1" aria-label="sem libras"></i>Legendado
+                            </button>
+                            <button class="btn btn-outline-primary btn-com-libras px-5 py-2" data-video-id="17"
+                                onclick="toggleAllVideos(true)">
+                                <i class="bx bx-universal-access px-1" aria-label="com libras"></i>Com Libras
+                            </button>
+                        </div>
+
+
+                        <div class="col-lg-8 mx-auto py-4">
+                            <div id="video-player-17" class="ratio ratio-16x9">
+                                <iframe id="video-iframe-17" class="rounded" title="Apresentação" allowfullscreen
+                                    uk-video=" autoplay:false;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Fim Video-->
+
+
+
             </article>
 
 
@@ -508,9 +588,14 @@
         </section>
 
 
-        <div id="modal-highlight-img-1" uk-modal="" class="uk-modal" tabindex="-1" style="overscroll-behavior: contain;">
+        <div id="modal-highlight-img-1" uk-modal="" class="uk-modal" tabindex="-1"
+            style="overscroll-behavior: contain;">
             <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14"
+                        height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+                    </svg></button>
                 <h2 class="uk-modal-title">Verificar condição</h2>
                 <p>
                     O sistema avalia se a condição é verdadeira.
@@ -519,9 +604,14 @@
         </div>
 
 
-        <div id="modal-highlight-img-2" uk-modal="" class="uk-modal" tabindex="-1" style="overscroll-behavior: contain;">
+        <div id="modal-highlight-img-2" uk-modal="" class="uk-modal" tabindex="-1"
+            style="overscroll-behavior: contain;">
             <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14"
+                        height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+                    </svg></button>
                 <h2 class="uk-modal-title">Condição verdadeira</h2>
                 <p>
                     A condição é determinada como verdadeira.
@@ -530,9 +620,14 @@
         </div>
 
 
-        <div id="modal-highlight-img-3" uk-modal="" class="uk-modal" tabindex="-1" style="overscroll-behavior: contain;">
+        <div id="modal-highlight-img-3" uk-modal="" class="uk-modal" tabindex="-1"
+            style="overscroll-behavior: contain;">
             <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14"
+                        height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+                    </svg></button>
                 <h2 class="uk-modal-title">Executar ação</h2>
                 <p>
                     O sistema executa a ação especificada.
@@ -540,9 +635,14 @@
             </div>
         </div>
 
-        <div id="modal-highlight-img-4" uk-modal="" class="uk-modal" tabindex="-1" style="overscroll-behavior: contain;">
+        <div id="modal-highlight-img-4" uk-modal="" class="uk-modal" tabindex="-1"
+            style="overscroll-behavior: contain;">
             <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14"
+                        height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+                    </svg></button>
                 <h2 class="uk-modal-title">Repetir ação</h2>
                 <p>
                     O sistema repete a ação enquanto a condição permanecer verdadeira.
@@ -550,9 +650,14 @@
             </div>
         </div>
 
-        <div id="modal-highlight-img-5" uk-modal="" class="uk-modal" tabindex="-1" style="overscroll-behavior: contain;">
+        <div id="modal-highlight-img-5" uk-modal="" class="uk-modal" tabindex="-1"
+            style="overscroll-behavior: contain;">
             <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14"
+                        height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+                    </svg></button>
                 <h2 class="uk-modal-title">Condição falsa</h2>
                 <p>
                     A condição é determinada como falsa.
@@ -560,9 +665,14 @@
             </div>
         </div>
 
-        <div id="modal-highlight-img-6" uk-modal="" class="uk-modal" tabindex="-1" style="overscroll-behavior: contain;">
+        <div id="modal-highlight-img-6" uk-modal="" class="uk-modal" tabindex="-1"
+            style="overscroll-behavior: contain;">
             <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14"
+                        height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+                    </svg></button>
                 <h2 class="uk-modal-title">Parar ação</h2>
                 <p>
                     O sistema para de executar a ação.
@@ -574,10 +684,10 @@
 
 
 
-                        <!--É hora de testar seus conhecimentos!!-->
+        <!--É hora de testar seus conhecimentos!!-->
 
-                        <!-- não está no SB -->
-                        <!-- <section class="container-fluid shadow my-5" style="background-color:#3f7ea7;">
+        <!-- não está no SB -->
+        <!-- <section class="container-fluid shadow my-5" style="background-color:#3f7ea7;">
                             <article>
                                 <div class="row justify-content-center">
                                     <div class=" col-lg-1 d-flex flex-column justify-content-center">
@@ -590,118 +700,148 @@
                                 </div>
                             </article>
                         </section> -->
-            
-               <!--É hora de testar seus conhecimentos!!-->
-            
-            
-                        <section class="d-flex min-vh-75 flex-column justify-content-center pb-5x">
-                            <article class="container py-4" id="aula7-section-2">
-                                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-                                    <div class="section-level1">
-                                        <h1>Praticando </h1>
+
+        <!--É hora de testar seus conhecimentos!!-->
+
+        <section class="container-fluid shadow my-5" style="background-color:#3f7ea7;">
+            <article>
+                <div class="row justify-content-center">
+                    <div class=" col-lg-1 d-flex flex-column justify-content-center">
+                        <img src="Layout/Aula/img/img4.png" alt="Icone de acerto" class=" mx-auto py-3"
+                            style="max-width:100px;">
+                    </div>
+
+                    <div class="col-lg-4 d-flex flex-column justify-content-center">
+                        <p class="text-white text-center pt-4"><strong>É hora de testar seus conhecimentos!!</strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="d-flex min-vh-75 flex-column justify-content-center pb-5x">
+            <article class="container py-4" id="aula7-section-2">
+                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+                    <div class="section-level1">
+                        <h1>Praticando </h1>
+                    </div>
+                    <h2>Chegou o momento de praticar o que você aprendeu até aqui. Vamos lá! </h2>
+                </div>
+                <div class="row pt-5">
+                    <div class=" mx-auto py-5 border rounded">
+                        <div class="m-3">
+                            <p><strong>1.</strong> Em um sistema industrial, se uma peça exceder 200 kg, o processo de
+                                registro deve ser interrompido imediatamente por segurança. Qual comando Java atende a
+                                esse requisito?</p>
+                        </div>
+                        <div class="row m-2">
+                            <div class="list-group-checkable d-grid gap-2" id="1-alternativas-escolha-unica-1">
+                                <!-- A -->
+                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1"
+                                    id="1-exercicio-escolha-unica-1" data-exercicio1="1" data-alternativa1="a"
+                                    aria-label="Alternativa A" aria-controls="opção A">
+                                <label class="list-group-item  border rounded-3" for="1-exercicio-escolha-unica-1">
+                                    <div class="row">
+                                        <p class="pt-3"><span class="destaque">A)</span>
+                                            <span class="small opacity-80">
+                                                continue
+                                            </span>
+                                        </p>
                                     </div>
-                                    <h2>Chegou o momento de praticar o que você aprendeu até aqui. Vamos lá! </h2>
-                                </div>
-                                <div class="row pt-5">
-                                    <div class=" mx-auto py-5 border rounded">
-                                        <div class="m-3">
-                                            <p><strong>1.</strong> Em um sistema industrial, se uma peça exceder 200 kg, o processo de registro deve ser interrompido imediatamente por segurança. Qual comando Java atende a esse requisito?</p>
-                                        </div>
-                                        <div class="row m-2">
-                                            <div class="list-group-checkable d-grid gap-2" id="1-alternativas-escolha-unica-1">
-                                                <!-- A -->
-                                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1" id="1-exercicio-escolha-unica-1" data-exercicio1="1" data-alternativa1="a" aria-label="Alternativa A" aria-controls="opção A">
-                                                <label class="list-group-item  border rounded-3" for="1-exercicio-escolha-unica-1">
-                                                    <div class="row">
-                                                        <p class="pt-3"><span class="destaque">A)</span>
-                                                            <span class="small opacity-80">
-                                                                continue
-                                                            </span>
-                                                        </p>
-                                                    </div>
-                                                </label>
-                                                <!-- B -->
-                                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1" id="1-exercicio-escolha-unica-2" data-exercicio1="1" data-alternativa1="b" aria-label="Alternativa B" aria-controls="opção B">
-                                                <label class="list-group-item border rounded-3" for="1-exercicio-escolha-unica-2">
-                                                    <div class="row">
-                                                        <p class="pt-3"><span class="destaque">B)</span>
-                                                            <span class="small opacity-80">
-                                                                return
-                                                            </span>
-                                                        </p>
-                                                    </div>
-                                                </label>
-                                                <!-- C -->
-                                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1" id="1-exercicio-escolha-unica-3" data-exercicio1="1" data-alternativa1="c" tabindex="-1">
-                                                <label class="list-group-item border rounded-3" for="1-exercicio-escolha-unica-3">
-                                                    <div class="row">
-                                                        <p class="pt-3"><span class="destaque">C)</span>
-                                                            <span class="small opacity-80">
-                                                                break
-                                                            </span>
-                                                        </p>
-                                                    </div>
-                                                </label>
-                                               
-                                            </div>
-                                        </div>
-                                        <div class="row m-2">
-                                            <div class="collapse" id="collapse-ex1-1">
-                                                <!-- mudar o ID de acordo com a questão para não dar conflito pois é identificação para chamar o feedback -->
-                                                <div class="card border shadow">
-                                                    <div class="card-header">
-                                                        <div class="card-title d-inline-flex align-baseline"><i class="bi bi-check-circle"></i><span class="ms-1">Muito bem! Você selecionou a alternativa correta.</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-body p-3">
-                                                        <p>
-                                                            O comando break encerra imediatamente a repetição, ideal para situações de segurança.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- collapsed de resposta incorreta 1 -->
-                                            <div class="collapse" id="collapse-ex1-2">
-                                                <div class="card border  shadow">
-                                                    <div class="card-header">
-                                                        <div class="card-title d-inline-flex align-baseline"><i class="bi bi-exclamation-circle"></i>
-                                                            <span class="ms-1">Tente outra vez! </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-body p-3 text-black-75">
-                                                        <p>
-                                                            Resposta incorreta.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- collapsed de resposta incorreta 2 -->
-                                            <div class="collapse" id="collapse-ex1-3">
-                                                <div class="card border shadow">
-                                                    <div class="card-header">
-                                                        <div class="card-title d-inline-flex align-baseline"><i class="bi bi-x-circle"></i>
-                                                            <span class="ms-1">Resposta
-                                                                incorreta.</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-body p-3">
-                                                        <p>
-                                                            Esta não é a alternativa correta. Se precisar volte ao conteúdo e tente novamente.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                </label>
+                                <!-- B -->
+                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1"
+                                    id="1-exercicio-escolha-unica-2" data-exercicio1="1" data-alternativa1="b"
+                                    aria-label="Alternativa B" aria-controls="opção B">
+                                <label class="list-group-item border rounded-3" for="1-exercicio-escolha-unica-2">
+                                    <div class="row">
+                                        <p class="pt-3"><span class="destaque">B)</span>
+                                            <span class="small opacity-80">
+                                                return
+                                            </span>
+                                        </p>
+                                    </div>
+                                </label>
+                                <!-- C -->
+                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1"
+                                    id="1-exercicio-escolha-unica-3" data-exercicio1="1" data-alternativa1="c"
+                                    tabindex="-1">
+                                <label class="list-group-item border rounded-3" for="1-exercicio-escolha-unica-3">
+                                    <div class="row">
+                                        <p class="pt-3"><span class="destaque">C)</span>
+                                            <span class="small opacity-80">
+                                                break
+                                            </span>
+                                        </p>
+                                    </div>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="row m-2">
+                            <div class="collapse" id="collapse-ex1-1">
+                                <!-- mudar o ID de acordo com a questão para não dar conflito pois é identificação para chamar o feedback -->
+                                <div class="card border shadow">
+                                    <div class="card-header">
+                                        <div class="card-title d-inline-flex align-baseline"><i
+                                                class="bi bi-check-circle"></i><span class="ms-1">Muito bem! Você
+                                                selecionou a alternativa correta.</span>
                                         </div>
                                     </div>
+                                    <div class="card-body p-3">
+                                        <p>
+                                            O comando break encerra imediatamente a repetição, ideal para situações de
+                                            segurança.
+                                        </p>
+                                    </div>
                                 </div>
+                            </div>
+                            <!-- collapsed de resposta incorreta 1 -->
+                            <div class="collapse" id="collapse-ex1-2">
+                                <div class="card border  shadow">
+                                    <div class="card-header">
+                                        <div class="card-title d-inline-flex align-baseline"><i
+                                                class="bi bi-exclamation-circle"></i>
+                                            <span class="ms-1">Tente outra vez! </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-3 text-black-75">
+                                        <p>
+                                            Resposta incorreta.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- collapsed de resposta incorreta 2 -->
+                            <div class="collapse" id="collapse-ex1-3">
+                                <div class="card border shadow">
+                                    <div class="card-header">
+                                        <div class="card-title d-inline-flex align-baseline"><i
+                                                class="bi bi-x-circle"></i>
+                                            <span class="ms-1">Resposta
+                                                incorreta.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-3">
+                                        <p>
+                                            Esta não é a alternativa correta. Se precisar volte ao conteúdo e tente
+                                            novamente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                <p class="pt-4">
-                                    Com esse exercício, você consolidou mais um passo da sua jornada como programador(a). Vamos seguir com novos desafios e conteúdos!
-                                    </p>
-            
+                <p class="pt-4 pb-5">
+                    Com esse exercício, você consolidou mais um passo da sua jornada como programador(a). Vamos seguir
+                    com novos desafios e conteúdos!
+                </p>
 
-                                    </article>
-                                    </section>
+
+            </article>
+        </section>
 
 
 
