@@ -97,7 +97,8 @@
                             </label>
                         </div>
                         <div class=" d-flex flex-row align-middle ">
-                            <button class="btn" type="button" title="visualizar vlibras" onclick="toggleVLibrasAndVideos()">
+                            <button class="btn" type="button" title="visualizar vlibras"
+                                onclick="toggleVLibrasAndVideos()">
                                 <i class='vlibras-show bx bx-universal-access  display-6' style="margin-bottom: 0px;"
                                     aria-label="visualizar vlibras"></i>
                             </button>
@@ -172,11 +173,11 @@
         <section>
             <article
                 class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
-                style="background-image: url('Layout/Template/img/capa.jpeg');">
+                style="background-image: url('Layout/Aula/img/aula10/capa.jpg');">
                 <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
                     <div class="card">
                         <div class="row m-2">
-                            <h1 class="pt-3">Matrizes</h1>
+                            <h1 class="pt-3">Dados em Tabelas: Manipulando Matrizes (2D)​</h1>
                         </div>
                     </div>
                 </div>
@@ -185,205 +186,205 @@
                 <div class="row position-absolute" style="bottom: 10%
                 ; left: 49.2%; transform: translateX(-50%)">
                     <div class="py-5 col-lg-4 mx-auto">
-                       <div class="mouse"></div>
-                       <p class=" uk-text-center ps-5 ">
-                        <span class="py-2 text-white px-3 rounded" style="background-color:rgba(0, 0, 0, 0.3)!important; border:0!important">Role para baixo</span>
-                    </p>
+                        <div class="mouse"></div>
+                        <p class=" uk-text-center ps-5 ">
+                            <span class="py-2 text-white px-3 rounded"
+                                style="background-color:rgba(0, 0, 0, 0.3)!important; border:0!important">Role para
+                                baixo</span>
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- APRESENTACAO -->
 
-        <section class="d-flex min-vh-100 flex-column justify-content-center">
+        <section class="d-flex flex-column justify-content-center">
             <article class="container py-4" id="aula10-section-1">
-                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-                    <div class="section-level1">
-                        <h1>Dados em Tabelas: Manipulando Matrizes (2D)</h1>
-                    </div>
-                </div>
-                <div class="row">
+                <div class="row mt-5">
                     <p>
-                        Se os vetores permitem organizar dados em linha, as matrizes levam esse conceito para duas dimensões. Elas são essenciais para lidar com informações que precisam ser representadas em linhas e colunas, como tabelas, grades ou mapas. Vamos ver como manipulá-las em Java.
+                        Se os vetores permitem organizar dados em linha, as matrizes levam esse conceito para duas
+                        dimensões. Elas são essenciais para lidar com informações que precisam ser representadas em
+                        linhas e colunas, como tabelas, grades ou mapas. Vamos ver como manipulá-las em Java.
                     </p>
 
-                    <p>Se os vetores são como uma fila ou uma lista, as <strong>matrizes</strong> podem ser imaginadas como uma <strong>tabela</strong>, com linhas e colunas. Elas são usadas quando você precisa organizar informações que possuem duas dimensões.</p>
+                    <p>Se os vetores são como uma fila ou uma lista, as <strong>matrizes</strong> podem ser imaginadas
+                        como uma <strong>tabela</strong>, com linhas e colunas. Elas são usadas quando você precisa
+                        organizar informações que possuem duas dimensões.</p>
 
-                    <p>Pense em um painel de sensores que monitoram uma fábrica inteira. Cada linha pode representar uma máquina, e cada coluna, uma variável monitorada — temperatura, pressão, velocidade, entre outras. Ou, então, imagine uma tabela de preços, em que cada linha representa um produto e cada coluna um tipo de cliente ou um mercado diferente.</p>
+                    <p>Pense em um painel de sensores que monitoram uma fábrica inteira. Cada linha pode representar uma
+                        máquina, e cada coluna, uma variável monitorada — temperatura, pressão, velocidade, entre
+                        outras. Ou, então, imagine uma tabela de preços, em que cada linha representa um produto e cada
+                        coluna um tipo de cliente ou um mercado diferente.</p>
 
                     <p>As matrizes estão presentes em diversas situações como:</p>
-                    
+
                     <ul>
                         <li>Controle de estoques distribuídos por setores e categorias.</li>
-                        <li>Processamento de imagens — cada pixel tem uma posição (linha, coluna) e uma cor associada.</li>
+                        <li>Processamento de imagens — cada pixel tem uma posição (linha, coluna) e uma cor associada.
+                        </li>
                         <li>Mapas de monitoramento ambiental, em que sensores estão posicionados em grids.</li>
-                        <li>Grades de horários, tabelas de custos, registros distribuídos por departamento ou região.</li>
+                        <li>Grades de horários, tabelas de custos, registros distribuídos por departamento ou região.
+                        </li>
                     </ul>
-
-                    <p>Trabalhar com <strong>matrizes</strong> permite que <strong>sistemas processem, comparem e manipulem dados de forma organizada</strong>, especialmente quando há cruzamento de informações em mais de uma dimensão.</p>
-
 
                 </div>
 
+            </article>
+        </section>
 
+        <section class="d-flex flex-column justify-content-center">
+            <article class="container py-4">
                 <div class="row">
-                
-
-                    <!--Pontos de Destaque Desktop-->
-                    <!-- <p class="d-none d-lg-block">
-                        <em>
-                            Clique nos pontos de atenção na imagem a seguir para conhecer esses elementos. 
-                        </em>
-                    </p> -->
-
+                    <p>Trabalhar com <strong>matrizes</strong> permite que <strong>sistemas processem, comparem e
+                            manipulem dados de forma organizada</strong>, especialmente quando há cruzamento de
+                        informações em mais de uma dimensão.</p>
 
                     <div class="col-lg-8 mx-auto py-5 d-none d-lg-block">
                         <div id="highlight-img" class="highlight-dark" name="highlight-img">
-                            <a href="#" id="item-spot13" class="highlight-spot rounded border-0" style="width: 40%; height: 20%;" data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-1" aria-expanded="false"></a>
-                            <a href="#" id="item-spot14" class="highlight-spot rounded border-0" style="width: 44%; height: 20%;" data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-2" aria-expanded="false"></a>
-                            <a href="#" id="item-spot15" class="highlight-spot rounded border-0" style="width: 44%; height: 20%;" data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-3" aria-expanded="false"></a>
-                           
-                           
-                            <img src="Layout/Aula/img/aula10/ilustra1.png" class="img-fluid mx-auto" alt="Diagrama em camadas representando o papel das matrizes no processamento de dados, voltado para o ensino de linguagens de programação no curso de ADS. O topo exibe a “Manipulação de Dados” com foco na eficiência estrutural das matrizes. A camada intermediária aborda a “Comparação de Dados” em múltiplas dimensões, e a base ilustra o “Processamento de Dados”, destacando a organização e a integração em sistemas. Cada conceito é visualmente representado por ícones e anéis coloridos empilhados, sugerindo uma hierarquia de operações. A imagem reforça a aplicação prática de arrays e matrizes em algoritmos e estruturas de dados.">
+                            <a href="#" id="item-spot13" class="highlight-spot rounded border-0"
+                                style="width: 40%; height: 20%;" data-bs-toggle="modal"
+                                uk-toggle="target: #modal-highlight-img-1" aria-expanded="false"></a>
+                            <a href="#" id="item-spot14" class="highlight-spot rounded border-0"
+                                style="width: 44%; height: 20%;" data-bs-toggle="modal"
+                                uk-toggle="target: #modal-highlight-img-2" aria-expanded="false"></a>
+                            <a href="#" id="item-spot15" class="highlight-spot rounded border-0"
+                                style="width: 44%; height: 20%;" data-bs-toggle="modal"
+                                uk-toggle="target: #modal-highlight-img-3" aria-expanded="false"></a>
+
+
+                            <img src="Layout/Aula/img/aula10/ilustra1.png" class="img-fluid mx-auto"
+                                alt="Diagrama em camadas representando o papel das matrizes no processamento de dados, voltado para o ensino de linguagens de programação no curso de ADS. O topo exibe a “Manipulação de Dados” com foco na eficiência estrutural das matrizes. A camada intermediária aborda a “Comparação de Dados” em múltiplas dimensões, e a base ilustra o “Processamento de Dados”, destacando a organização e a integração em sistemas. Cada conceito é visualmente representado por ícones e anéis coloridos empilhados, sugerindo uma hierarquia de operações. A imagem reforça a aplicação prática de arrays e matrizes em algoritmos e estruturas de dados.">
                         </div>
                     </div>
 
-<!--Fim do Ponto de Destaque Desktop-->
+                    <!--Fim do Ponto de Destaque Desktop-->
 
 
-<!--Cards Mobile-->
+                    <!--Cards Mobile-->
 
-<div class="col-lg-12 d-lg-none">
-    <a data-fancybox="zoom" data-src="Layout/Aula/img/aula10/img1.png" data-caption="">
-        <img src="Layout/Aula/img/aula10/img1.png" class="img-fluid mx-auto my-4" alt="Diagrama em camadas representando o papel das matrizes no processamento de dados, voltado para o ensino de linguagens de programação no curso de ADS. O topo exibe a “Manipulação de Dados” com foco na eficiência estrutural das matrizes. A camada intermediária aborda a “Comparação de Dados” em múltiplas dimensões, e a base ilustra o “Processamento de Dados”, destacando a organização e a integração em sistemas. Cada conceito é visualmente representado por ícones e anéis coloridos empilhados, sugerindo uma hierarquia de operações. A imagem reforça a aplicação prática de arrays e matrizes em algoritmos e estruturas de dados.">
-     </a>
-
-    
-
-    <div class="uk-card uk-card-default my-4" style="border-color: #3f7ea7;">
-        <div class="uk-card-body">
-            <h3 class="uk-card-title">Manipulação de dados</h3>
-            <p>Matrizes manipulam dados de forma eficiente</p>
-        </div>
-    </div>
-
-
-    <div class="uk-card uk-card-default my-4" style="border-color:#f7931e">
-        <div class="uk-card-body">
-            <h3 class="uk-card-title">Comparação de dados</h3>
-            <p>Matrizes comparam dados em várias dimensões</p>
-        </div>
-    </div>
+                    <div class="col-lg-12 d-lg-none">
+                        <a data-fancybox="zoom" data-src="Layout/Aula/img/aula10/img1.png" data-caption="">
+                            <img src="Layout/Aula/img/aula10/img1.png" class="img-fluid mx-auto my-4"
+                                alt="Diagrama em camadas representando o papel das matrizes no processamento de dados, voltado para o ensino de linguagens de programação no curso de ADS. O topo exibe a “Manipulação de Dados” com foco na eficiência estrutural das matrizes. A camada intermediária aborda a “Comparação de Dados” em múltiplas dimensões, e a base ilustra o “Processamento de Dados”, destacando a organização e a integração em sistemas. Cada conceito é visualmente representado por ícones e anéis coloridos empilhados, sugerindo uma hierarquia de operações. A imagem reforça a aplicação prática de arrays e matrizes em algoritmos e estruturas de dados.">
+                        </a>
 
 
 
-    <div class="uk-card uk-card-default my-4" style="border-color:#7c4d9e">
-        <div class="uk-card-body">
-            <h3 class="uk-card-title">Processamento de dados</h3>
-            <p>Sistemas processam dados de forma organizada</p>
-        </div>
-    </div>
+                        <div class="uk-card uk-card-default my-4" style="border-color: #3f7ea7;">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Manipulação de dados</h3>
+                                <p>Matrizes manipulam dados de forma eficiente</p>
+                            </div>
+                        </div>
+
+
+                        <div class="uk-card uk-card-default my-4" style="border-color:#f7931e">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Comparação de dados</h3>
+                                <p>Matrizes comparam dados em várias dimensões</p>
+                            </div>
+                        </div>
 
 
 
-   
+                        <div class="uk-card uk-card-default my-4" style="border-color:#7c4d9e">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Processamento de dados</h3>
+                                <p>Sistemas processam dados de forma organizada</p>
+                            </div>
+                        </div>
+                    </div>
 
 
-</div>
+                    <!--Fim Cards Mobile-->
+                </div>
 
+                <div class="row">
+                    <p>Assim como acontece com vetores, entender matrizes é uma habilidade essencial para quem
+                        desenvolve soluções tecnológicas — seja na indústria, no comércio ou em sistemas que exigem
+                        cruzamento de dados em múltiplas dimensões.</p>
 
-<!--Fim Cards Mobile-->
-</div>
-
-<div class="row">
-    <p>Assim como acontece com vetores, entender matrizes é uma habilidade essencial para quem desenvolve soluções tecnológicas — seja na indústria, no comércio ou em sistemas que exigem cruzamento de dados em múltiplas dimensões.</p>
-
-    <p>Agora, vamos ver como essas estruturas bidimensionais são utilizadas na prática, aplicando os conceitos em situações reais de manipulação de dados.</p>
-
-    <p><em>Clique em play e acompanhe a videoaula sobre matrizes: matriz transposta.</em></p>
-</div>
-
-
-
-
-
-                    <!--Video-->
-
-
-                    <div class="row">
-
-                 
-                                 
-                        <div class="videos">
-                     <div class="mb-3 d-flex justify-content-end btn-container">
-                         <button class="btn btn-primary btn-sem-libras px-5 py-2" data-video-id="24" onclick="toggleAllVideos(false)">
-                             <i class="bi bi-play-fill px-1" aria-label="sem libras"></i>Legendado
-                         </button>
-                         <button class="btn btn-outline-primary btn-com-libras px-5 py-2" data-video-id="24" onclick="toggleAllVideos(true)">
-                             <i class="bx bx-universal-access px-1" aria-label="com libras"></i>Com Libras
-                         </button>
-                             </div>
-                            
-                     
-                             <div class="col-lg-8 mx-auto py-4">
-                                          <div id="video-player-24" class="ratio ratio-16x9">
-                                 <iframe id="video-iframe-24" class="rounded" title="Apresentação" allowfullscreen uk-video=" autoplay:false;"></iframe>
-                             </div>
-                                     </div>
-                                         </div>
-                     
-                                     </div>
-                     <!--Fim Video-->
-
-
-                    <div class="row">
-                        <p><em>Clique em play e acompanhe a videoaula sobre matrizes: controle de qualidade de parafusos.</em></p>
-                    </div> 
-
-
-                     <!--Video-->
-
-
-                     <div class="row">
-
-                 
-                                 
-                        <div class="videos">
-                     <div class="mb-3 d-flex justify-content-end btn-container">
-                         <button class="btn btn-primary btn-sem-libras px-5 py-2" data-video-id="25" onclick="toggleAllVideos(false)">
-                             <i class="bi bi-play-fill px-1" aria-label="sem libras"></i>Legendado
-                         </button>
-                         <button class="btn btn-outline-primary btn-com-libras px-5 py-2" data-video-id="25" onclick="toggleAllVideos(true)">
-                             <i class="bx bx-universal-access px-1" aria-label="com libras"></i>Com Libras
-                         </button>
-                             </div>
-                            
-                     
-                             <div class="col-lg-8 mx-auto py-4">
-                                          <div id="video-player-25" class="ratio ratio-16x9">
-                                 <iframe id="video-iframe-25" class="rounded" title="Apresentação" allowfullscreen uk-video=" autoplay:false;"></iframe>
-                             </div>
-                                     </div>
-                                         </div>
-                     
-                                     </div>
-                     <!--Fim Video-->
-
-
-
-                
+                    <p>Agora, vamos ver como essas estruturas bidimensionais são utilizadas na prática, aplicando os
+                        conceitos em situações reais de manipulação de dados.</p>
+                </div>
             </article>
+        </section>
+
+        <section class="d-flex flex-column justify-content-center">
+            <article class="container py-4">
+                <!--Video-->
+                <div class="row">
+                    <p><em>Clique em play e acompanhe a videoaula sobre matrizes: matriz transposta.</em></p>
+
+                    <div class="videos">
+                        <div class="mb-3 d-flex justify-content-end btn-container">
+                            <button class="btn btn-primary btn-sem-libras px-5 py-2" data-video-id="24"
+                                onclick="toggleAllVideos(false)">
+                                <i class="bi bi-play-fill px-1" aria-label="sem libras"></i>Legendado
+                            </button>
+                            <button class="btn btn-outline-primary btn-com-libras px-5 py-2" data-video-id="24"
+                                onclick="toggleAllVideos(true)">
+                                <i class="bx bx-universal-access px-1" aria-label="com libras"></i>Com Libras
+                            </button>
+                        </div>
 
 
+                        <div class="col-lg-8 mx-auto py-4">
+                            <div id="video-player-24" class="ratio ratio-16x9">
+                                <iframe id="video-iframe-24" class="rounded" title="Apresentação" allowfullscreen
+                                    uk-video=" autoplay:false;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Fim Video-->
+            </article>
+        </section>
+
+        <section class="d-flex flex-column justify-content-center">
+            <article class="container py-4">
+                <!--Video-->
+                <div class="row">
+                    <p><em>Clique em play e acompanhe a videoaula sobre matrizes: controle de qualidade de
+                            parafusos.</em></p>
+
+                    <div class="videos">
+                        <div class="mb-3 d-flex justify-content-end btn-container">
+                            <button class="btn btn-primary btn-sem-libras px-5 py-2" data-video-id="25"
+                                onclick="toggleAllVideos(false)">
+                                <i class="bi bi-play-fill px-1" aria-label="sem libras"></i>Legendado
+                            </button>
+                            <button class="btn btn-outline-primary btn-com-libras px-5 py-2" data-video-id="25"
+                                onclick="toggleAllVideos(true)">
+                                <i class="bx bx-universal-access px-1" aria-label="com libras"></i>Com Libras
+                            </button>
+                        </div>
 
 
+                        <div class="col-lg-8 mx-auto py-4">
+                            <div id="video-player-25" class="ratio ratio-16x9">
+                                <iframe id="video-iframe-25" class="rounded" title="Apresentação" allowfullscreen
+                                    uk-video=" autoplay:false;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Fim Video-->
+            </article>
         </section>
 
 
 
-        <div id="modal-highlight-img-1" uk-modal="" class="uk-modal" tabindex="-1" style="overscroll-behavior: contain;">
+        <div id="modal-highlight-img-1" uk-modal="" class="uk-modal" tabindex="-1"
+            style="overscroll-behavior: contain;">
             <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14"
+                        height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+                    </svg></button>
                 <h2 class="uk-modal-title">Manipulação de dados</h2>
                 <p>
                     Matrizes manipulam dados de forma eficiente
@@ -392,9 +393,14 @@
         </div>
 
 
-        <div id="modal-highlight-img-2" uk-modal="" class="uk-modal" tabindex="-1" style="overscroll-behavior: contain;">
+        <div id="modal-highlight-img-2" uk-modal="" class="uk-modal" tabindex="-1"
+            style="overscroll-behavior: contain;">
             <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14"
+                        height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+                    </svg></button>
                 <h2 class="uk-modal-title">Comparação de dados</h2>
                 <p>
                     Matrizes comparam dados em várias dimensões
@@ -403,149 +409,163 @@
         </div>
 
 
-        <div id="modal-highlight-img-3" uk-modal="" class="uk-modal" tabindex="-1" style="overscroll-behavior: contain;">
+        <div id="modal-highlight-img-3" uk-modal="" class="uk-modal" tabindex="-1"
+            style="overscroll-behavior: contain;">
             <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+                <button class="uk-modal-close-default uk-icon uk-close" type="button" uk-close=""><svg width="14"
+                        height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+                    </svg></button>
                 <h2 class="uk-modal-title">Processamento de dados</h2>
                 <p>
                     Sistemas processam dados de forma organizada
                 </p>
             </div>
-        </div> 
+        </div>
+
+        <section class="container-fluid shadow my-5" style="background-color:#3f7ea7;">
+            <article>
+                <div class="row justify-content-center">
+                    <div class=" col-lg-1 d-flex flex-column justify-content-center">
+                        <img src="Layout/Aula/img/img4.png" alt="Icone de acerto" class=" mx-auto py-3"
+                            style="max-width:100px;">
+                    </div>
+
+                    <div class="col-lg-4 d-flex flex-column justify-content-center">
+                        <p class="text-white text-center pt-4"><strong>É hora de testar seus conhecimentos!!</strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
 
 
-
-
-                        <!--É hora de testar seus conhecimentos!!-->
-
-                        <!-- Não está no SB -->
-                        <!-- <section class="container-fluid shadow my-5" style="background-color:#3f7ea7;">
-                            <article>
-                                <div class="row justify-content-center">
-                                    <div class=" col-lg-1 d-flex flex-column justify-content-center">
-                                        <img src="Layout/Aula/img/img4.png" alt="Icone de acerto" class=" mx-auto py-3" style="max-width:100px;">
-                                      </div>
-                                     
-                                      <div class="col-lg-4 d-flex flex-column justify-content-center">
-                                          <p class="text-white text-center pt-4"><strong>É hora de testar seus conhecimentos!!</strong></p>
-                                      </div>
-                                </div>
-                            </article>
-                        </section> -->
-            
-               <!--É hora de testar seus conhecimentos!!-->
-            
-            
-                        <section class="d-flex min-vh-75 flex-column justify-content-center pb-5">
-                            <article class="container py-4" id="aula10-section-2">
-                                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-                                    <div class="section-level1">
-                                        <h1>Praticando </h1>
+        <section class="d-flex min-vh-75 flex-column justify-content-center pb-5">
+            <article class="container py-4" id="aula10-section-2">
+                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+                    <div class="section-level1">
+                        <h1>Praticando </h1>
+                    </div>
+                    <h2>Chegou o momento de praticar o que você aprendeu até aqui. Vamos lá! </h2>
+                </div>
+                <div class="row pt-5">
+                    <div class=" mx-auto py-5 border rounded">
+                        <div class="m-3">
+                            <p><strong>1.</strong> Durante o controle da produção industrial, um desenvolvedor acessou a
+                                posição [4][2] de uma matriz int[][] producao = new int[4][3];. O que ocorrerá?</p>
+                        </div>
+                        <div class="row m-2">
+                            <div class="list-group-checkable d-grid gap-2" id="1-alternativas-escolha-unica-1">
+                                <!-- A -->
+                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1"
+                                    id="1-exercicio-escolha-unica-1" data-exercicio1="1" data-alternativa1="a"
+                                    aria-label="Alternativa A" aria-controls="opção A">
+                                <label class="list-group-item  border rounded-3" for="1-exercicio-escolha-unica-1">
+                                    <div class="row">
+                                        <p class="pt-3"><span class="destaque">A)</span>
+                                            <span class="small opacity-80">
+                                                Será retornado o valor 0, pois é o valor padrão de elementos inteiros.
+                                            </span>
+                                        </p>
                                     </div>
-                                    <h2>Chegou o momento de praticar o que você aprendeu até aqui. Vamos lá! </h2>
-                                </div>
-                                <div class="row pt-5">
-                                    <div class=" mx-auto py-5 border rounded">
-                                        <div class="m-3">
-                                            <p><strong>1.</strong> Durante o controle da produção industrial, um desenvolvedor acessou a posição [4][2] de uma matriz int[][] producao = new int[4][3];. O que ocorrerá?</p>
-                                        </div>
-                                        <div class="row m-2">
-                                            <div class="list-group-checkable d-grid gap-2" id="1-alternativas-escolha-unica-1">
-                                                <!-- A -->
-                                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1" id="1-exercicio-escolha-unica-1" data-exercicio1="1" data-alternativa1="a" aria-label="Alternativa A" aria-controls="opção A">
-                                                <label class="list-group-item  border rounded-3" for="1-exercicio-escolha-unica-1">
-                                                    <div class="row">
-                                                        <p class="pt-3"><span class="destaque">A)</span>
-                                                            <span class="small opacity-80">
-                                                                Será retornado o valor 0, pois é o valor padrão de elementos inteiros.
-                                                            </span>
-                                                        </p>
-                                                    </div>
-                                                </label>
-                                                <!-- B -->
-                                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1" id="1-exercicio-escolha-unica-2" data-exercicio1="1" data-alternativa1="b" aria-label="Alternativa B" aria-controls="opção B">
-                                                <label class="list-group-item border rounded-3" for="1-exercicio-escolha-unica-2">
-                                                    <div class="row">
-                                                        <p class="pt-3"><span class="destaque">B)</span>
-                                                            <span class="small opacity-80">
-                                                                O código lançará uma exceção de tempo de execução por acessar índice inválido.
-                                                            </span>
-                                                        </p>
-                                                    </div>
-                                                </label>
-                                                <!-- C -->
-                                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1" id="1-exercicio-escolha-unica-3" data-exercicio1="1" data-alternativa1="c" tabindex="-1">
-                                                <label class="list-group-item border rounded-3" for="1-exercicio-escolha-unica-3">
-                                                    <div class="row">
-                                                        <p class="pt-3"><span class="destaque">C)</span>
-                                                            <span class="small opacity-80">
-                                                                A posição será criada dinamicamente com valor padrão, como em listas.
-                                                            </span>
-                                                        </p>
-                                                    </div>
-                                                </label>
-                                               
-                                            </div>
-                                        </div>
-                                        <div class="row m-2">
-                                            <div class="collapse" id="collapse-ex1-1">
-                                                <!-- mudar o ID de acordo com a questão para não dar conflito pois é identificação para chamar o feedback -->
-                                                <div class="card border shadow">
-                                                    <div class="card-header">
-                                                        <div class="card-title d-inline-flex align-baseline"><i class="bi bi-check-circle"></i><span class="ms-1">Muito bem! Você selecionou a alternativa correta.</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-body p-3">
-                                                        <p>
-                                                            Em Java, acessar índices inválidos em arrays ou matrizes gera a exceção ArrayIndexOutOfBoundsException.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- collapsed de resposta incorreta 1 -->
-                                            <div class="collapse" id="collapse-ex1-2">
-                                                <div class="card border  shadow">
-                                                    <div class="card-header">
-                                                        <div class="card-title d-inline-flex align-baseline"><i class="bi bi-exclamation-circle"></i>
-                                                            <span class="ms-1">Tente outra vez! </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-body p-3 text-black-75">
-                                                        <p>
-                                                            Resposta incorreta.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- collapsed de resposta incorreta 2 -->
-                                            <div class="collapse" id="collapse-ex1-3">
-                                                <div class="card border shadow">
-                                                    <div class="card-header">
-                                                        <div class="card-title d-inline-flex align-baseline"><i class="bi bi-x-circle"></i>
-                                                            <span class="ms-1">Resposta
-                                                                incorreta.</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-body p-3">
-                                                        <p>
-                                                            Esta não é a alternativa correta. Se precisar volte ao conteúdo e tente novamente.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                </label>
+                                <!-- B -->
+                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1"
+                                    id="1-exercicio-escolha-unica-2" data-exercicio1="1" data-alternativa1="b"
+                                    aria-label="Alternativa B" aria-controls="opção B">
+                                <label class="list-group-item border rounded-3" for="1-exercicio-escolha-unica-2">
+                                    <div class="row">
+                                        <p class="pt-3"><span class="destaque">B)</span>
+                                            <span class="small opacity-80">
+                                                O código lançará uma exceção de tempo de execução por acessar índice
+                                                inválido.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </label>
+                                <!-- C -->
+                                <input class="list-group-item-check pe-none" type="radio" name="list-unica-escolha-1"
+                                    id="1-exercicio-escolha-unica-3" data-exercicio1="1" data-alternativa1="c"
+                                    tabindex="-1">
+                                <label class="list-group-item border rounded-3" for="1-exercicio-escolha-unica-3">
+                                    <div class="row">
+                                        <p class="pt-3"><span class="destaque">C)</span>
+                                            <span class="small opacity-80">
+                                                A posição será criada dinamicamente com valor padrão, como em listas.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="row m-2">
+                            <div class="collapse" id="collapse-ex1-1">
+                                <!-- mudar o ID de acordo com a questão para não dar conflito pois é identificação para chamar o feedback -->
+                                <div class="card border shadow">
+                                    <div class="card-header">
+                                        <div class="card-title d-inline-flex align-baseline"><i
+                                                class="bi bi-check-circle"></i><span class="ms-1">Muito bem! Você
+                                                selecionou a alternativa correta.</span>
                                         </div>
                                     </div>
+                                    <div class="card-body p-3">
+                                        <p>
+                                            Em Java, acessar índices inválidos em arrays ou matrizes gera a exceção
+                                            ArrayIndexOutOfBoundsException.
+                                        </p>
+                                    </div>
                                 </div>
+                            </div>
+                            <!-- collapsed de resposta incorreta 1 -->
+                            <div class="collapse" id="collapse-ex1-2">
+                                <div class="card border  shadow">
+                                    <div class="card-header">
+                                        <div class="card-title d-inline-flex align-baseline"><i
+                                                class="bi bi-exclamation-circle"></i>
+                                            <span class="ms-1">Tente outra vez! </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-3 text-black-75">
+                                        <p>
+                                            Resposta incorreta.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- collapsed de resposta incorreta 2 -->
+                            <div class="collapse" id="collapse-ex1-3">
+                                <div class="card border shadow">
+                                    <div class="card-header">
+                                        <div class="card-title d-inline-flex align-baseline"><i
+                                                class="bi bi-x-circle"></i>
+                                            <span class="ms-1">Resposta
+                                                incorreta.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-3">
+                                        <p>
+                                            Esta não é a alternativa correta. Se precisar volte ao conteúdo e tente
+                                            novamente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                <p class="pt-4">
-                                    Com esse exercício, você consolidou mais um passo da sua jornada como programador(a). Vamos seguir com novos desafios e conteúdo!
+                <p class="pt-4">
+                    Com esse exercício, você consolidou mais um passo da sua jornada como programador(a). Vamos seguir
+                    com novos desafios e conteúdo!
 
 
-                                    </p>
-            
+                </p>
 
-                                    </article>
-                                    </section>
+
+            </article>
+        </section>
 
 
 

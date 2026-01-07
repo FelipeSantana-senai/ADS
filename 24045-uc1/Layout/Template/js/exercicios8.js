@@ -19,6 +19,7 @@ $("input[data-exercicio1]").click(function () {
         case 1:
             // Resposta correta
             if ($(this).data("alternativa1") == "c") {
+                changetext($(this))
 
                 /**layout da resposta correta */
                 $("#1-exercicio-escolha-unica-1").prop("disabled", true);// id para
@@ -47,6 +48,7 @@ $("input[data-exercicio1]").click(function () {
 
                 //feedback de resposta incorreta 2
                 tentativasEx1 = 2
+                changetext($(this))
                 $('#collapse-ex1-2').collapse('hide'); //oculta
 
                 setTimeout(function () {

@@ -525,6 +525,12 @@ function renderSubitems(subitems) {
     subHtml += '</ul>';
     return subHtml;
 }
+
+// Muda a cor do texto do exercicio de multipla escolha
+function changetext(e) {
+    $($(`label[for='${e[0].id}']`)[0].children[0].children[0].children[1]).attr("style", "color: white !important;")
+    // console.log($($(`label[for='${e[0].id}']`)[0].children[0].children[0].children[1]).attr("style", "color: white !important;"))
+}
  
 document.addEventListener('DOMContentLoaded', () => {
     try {
